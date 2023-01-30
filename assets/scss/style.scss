@@ -1,2 +1,25 @@
 @import "./partials/reset";
 @import "./partials/variabili";
+
+body {
+  font-family: $font-family;
+  #side-left {
+    background-color: $black;
+    #icons {
+      div {
+        i {
+          color: $textGray;
+        }
+      }
+    }
+  }
+  #center {
+    background: linear-gradient(180deg, #303030 0%, #121212 100%);
+  }
+  #side-right {
+    background-color: $black;
+  }
+  footer {
+    background-color: $player;
+  }
+}

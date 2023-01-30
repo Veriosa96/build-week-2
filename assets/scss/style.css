@@ -1,1 +1,30 @@
-/*# sourceMappingURL=style.css.map */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+body #side-left {
+  background-color: black;
+}
+body #side-left #icons div i {
+  color: lightgrey;
+}
+body #center {
+  background: linear-gradient(180deg, #303030 0%, #121212 100%);
+}
+body #side-right {
+  background-color: black;
+}
+body footer {
+  background-color: #181818;
+}/*# sourceMappingURL=style.css.map */
