@@ -96,8 +96,10 @@ body {
     display: flex;
     justify-content: space-between;
     #dropdown {
-      border: 1px solid $grey;
-      background-color: $grey;
+      background-color: $black;
+      &:hover{
+        background-color: $grey;
+      }
       border-radius: 5em;
       padding:0 0.3em;
       color: $textWhite !important;
@@ -142,5 +144,6 @@ body {
     border-radius: 3px;
     backdrop-filter: blur(29px);
     height: 50%;
+    margin-top: 0.5em;
   }
 }

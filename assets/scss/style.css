@@ -96,8 +96,7 @@ body footer {
   justify-content: space-between;
 }
 #center .topBar #dropdown {
-  border: 1px solid #171717;
-  background-color: #171717;
+  background-color: black;
   border-radius: 5em;
   padding: 0 0.3em;
   color: white !important;
@@ -105,6 +104,9 @@ body footer {
   font-weight: bold;
   display: flex;
   align-items: center;
+}
+#center .topBar #dropdown:hover {
+  background-color: #171717;
 }
 #center .topBar #dropdown img {
   width: 1.5em;
@@ -140,4 +142,5 @@ body footer {
   -webkit-backdrop-filter: blur(29px);
           backdrop-filter: blur(29px);
   height: 50%;
+  margin-top: 0.5em;
 }/*# sourceMappingURL=style.css.map */
