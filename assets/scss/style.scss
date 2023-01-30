@@ -6,15 +6,29 @@ body {
   #side-left {
     background-color: $black;
     #icons {
+      color: $textGray;
       div {
-        i {
-          color: $textGray;
-          padding-right: 0.8em;
-          font-size: 1.2em;
-        }
-        img {
-          padding-bottom: 0.5em;
-          width: 20px;
+        span {
+          display: flex;
+          align-items: center;
+          i {
+            padding-right: 0.8em;
+            font-size: 1.2em;
+          }
+          img {
+            padding-bottom: 0.5em;
+            padding-top: 0.4em;
+            width: 20px;
+            margin-right: 0.8em;
+          }
+          p {
+            font-size: 0.8em;
+            font-weight: bold;
+            &:hover {
+              cursor: pointer;
+              color: $textWhite;
+            }
+          }
         }
       }
     }

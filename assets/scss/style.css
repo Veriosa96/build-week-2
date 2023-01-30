@@ -20,14 +20,30 @@ body {
 body #side-left {
   background-color: black;
 }
-body #side-left #icons div i {
+body #side-left #icons {
   color: lightgrey;
+}
+body #side-left #icons div span {
+  display: flex;
+  align-items: center;
+}
+body #side-left #icons div span i {
   padding-right: 0.8em;
   font-size: 1.2em;
 }
-body #side-left #icons div img {
+body #side-left #icons div span img {
   padding-bottom: 0.5em;
+  padding-top: 0.4em;
   width: 20px;
+  margin-right: 0.8em;
+}
+body #side-left #icons div span p {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+body #side-left #icons div span p:hover {
+  cursor: pointer;
+  color: white;
 }
 body #center {
   background: linear-gradient(180deg, #303030 0%, #121212 100%);
@@ -37,8 +53,4 @@ body #side-right {
 }
 body footer {
   background-color: #181818;
-} /*# sourceMappingURL=style.css.map */
-
-#icons i {
-  padding-bottom: 0.2em;
-}
+}/*# sourceMappingURL=style.css.map */
