@@ -133,4 +133,11 @@ body footer {
   border: 1px solid #171717;
   color: lightgrey;
   margin-right: 0.5em;
+}
+#center .container {
+  background: radial-gradient(95.7% 90.96% at 83.53% 6.67%, #2e2e2e 20%, #020202);
+  border-radius: 3px;
+  -webkit-backdrop-filter: blur(29px);
+          backdrop-filter: blur(29px);
+  height: 50%;
 }/*# sourceMappingURL=style.css.map */

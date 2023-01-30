@@ -137,4 +137,10 @@ body {
       margin-right: 0.5em;
     }
   }
+  .container{
+    background: radial-gradient(95.7% 90.96% at 83.53% 6.67%, #2e2e2e 20%, #020202);
+    border-radius: 3px;
+    backdrop-filter: blur(29px);
+    height: 50%;
+  }
 }
