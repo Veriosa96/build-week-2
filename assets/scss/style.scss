@@ -97,17 +97,17 @@ body {
     justify-content: space-between;
     #dropdown {
       background-color: $black;
-      &:hover {
+      &:hover{
         background-color: $grey;
       }
       border-radius: 5em;
-      padding: 0 0.3em;
+      padding:0 0.3em;
       color: $textWhite !important;
       font-size: 0.8em;
       font-weight: bold;
       display: flex;
       align-items: center;
-      img {
+      img{
         width: 1.5em;
         height: 1.3em;
       }
@@ -117,10 +117,10 @@ body {
         background-color: $grey;
         box-shadow: 0px 12px 26px -12px rgba(0, 0, 0, 0.79);
         -webkit-box-shadow: 0px 12px 26px -12px rgba(0, 0, 0, 0.79);
-        li {
-          a {
+        li{
+          a{
             color: $textWhite;
-            &:hover {
+            &:hover{
               color: $grey;
             }
           }
@@ -139,7 +139,7 @@ body {
       margin-right: 0.5em;
     }
   }
-  .box {
+  .container {
     background: radial-gradient(
       95.7% 90.96% at 83.53% 6.67%,
       #2e2e2e 20%,
@@ -151,6 +151,7 @@ body {
     margin-top: 0.5em;
   }
 }
+<<<<<<< HEAD
 
 /* THIRD SECTION */
 
@@ -209,3 +210,5 @@ body {
     }
   }
 }
+=======
+>>>>>>> parent of edc5446 (finsh second card)

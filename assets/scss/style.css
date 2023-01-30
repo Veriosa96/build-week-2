@@ -143,6 +143,7 @@ body footer {
           backdrop-filter: blur(29px);
   height: 50%;
   margin-top: 0.5em;
+<<<<<<< HEAD
 }
 
 /* THIRD SECTION */
@@ -184,7 +185,10 @@ body footer {
   font-weight: bold;
   font-size: 0.9em;
 }
-.thirdCard .cardBody p {
-  color: lightgrey;
-  font-size: 0.7em;
+#second-section div div {
+  background-color: #3f3f3f;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  margin-right: 1.5em;
 }/*# sourceMappingURL=style.css.map */
