@@ -86,4 +86,41 @@ body footer {
 }
 .avatars .hours {
   font-size: 0.5em;
+}
+
+#center {
+  padding: 0.5em 1em;
+}
+#center .topBar {
+  display: flex;
+  justify-content: space-between;
+}
+#center .topBar #dropdown {
+  color: white !important;
+}
+#center .topBar #dropdown img {
+  width: 1.5em;
+  height: 1.3em;
+}
+#center .topBar #dropdown .dropdown-menu {
+  background-color: #171717;
+  box-shadow: 0px 12px 26px -12px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: 0px 12px 26px -12px rgba(0, 0, 0, 0.79);
+}
+#center .topBar #dropdown .dropdown-menu li a {
+  color: white;
+}
+#center .topBar #dropdown .dropdown-menu li a:hover {
+  color: #171717;
+}
+#center .topBar .arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5em;
+  border-radius: 50%;
+  background-color: #171717;
+  border: 1px solid #171717;
+  color: lightgrey;
+  margin-right: 0.5em;
 }/*# sourceMappingURL=style.css.map */

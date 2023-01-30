@@ -88,3 +88,43 @@ body {
     font-size: 0.5em;
   }
 }
+// INIZIO SEZIONE CENTRALE
+
+#center {
+  padding: 0.5em 1em;
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    #dropdown {
+      color: $textWhite !important;
+      img{
+        width: 1.5em;
+        height: 1.3em;
+      }
+      .dropdown-menu {
+        background-color: $grey;
+        box-shadow: 0px 12px 26px -12px rgba(0, 0, 0, 0.79);
+        -webkit-box-shadow: 0px 12px 26px -12px rgba(0, 0, 0, 0.79);
+        li{
+          a{
+            color: $textWhite;
+            &:hover{
+              color: $grey;
+            }
+          }
+        }
+      }
+    }
+    .arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.5em;
+      border-radius: 50%;
+      background-color: $grey;
+      border: 1px solid $grey;
+      color: $textGray;
+      margin-right: 0.5em;
+    }
+  }
+}
