@@ -22,6 +22,8 @@ body #side-left {
 }
 body #side-left #icons {
   color: lightgrey;
+  border-bottom: 1px solid #3f3f3f;
+  padding-bottom: 0.8em;
 }
 body #side-left #icons div span {
   display: flex;
@@ -53,4 +55,35 @@ body #side-right {
 }
 body footer {
   background-color: #181818;
+}
+
+/* RIGHT SIDEBAR */
+.controlBar i {
+  color: white;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+
+.rightColumn p {
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.rightColumn i {
+  color: lightgrey;
+}
+
+.avatars .leftImage #avatarCircle {
+  width: 25px;
+  height: 25px;
+}
+.avatars .boldName {
+  font-weight: bold;
+}
+.avatars p {
+  font-size: 0.6em;
+  color: lightgrey;
+}
+.avatars .hours {
+  font-size: 0.5em;
 }/*# sourceMappingURL=style.css.map */

@@ -7,6 +7,8 @@ body {
     background-color: $black;
     #icons {
       color: $textGray;
+      border-bottom: 1px solid $lightgrey;
+      padding-bottom: 0.8em;
       div {
         span {
           display: flex;
@@ -41,5 +43,48 @@ body {
   }
   footer {
     background-color: $player;
+  }
+}
+
+/* RIGHT SIDEBAR */
+
+.controlBar {
+  i {
+    color: $textWhite;
+    font-size: 0.7em;
+    cursor: pointer;
+  }
+}
+
+.rightColumn {
+  p {
+    color: $textWhite;
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+
+  i {
+    color: $textGray;
+  }
+}
+
+.avatars {
+  .leftImage {
+    #avatarCircle {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .boldName {
+    font-weight: bold;
+  }
+  p {
+    font-size: 0.6em;
+    color: $textGray;
+  }
+
+  .hours {
+    font-size: 0.5em;
   }
 }
