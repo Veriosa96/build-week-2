@@ -18,6 +18,11 @@ body #side-left {
 }
 body #side-left #icons div i {
   color: lightgrey;
+  padding-bottom: 0.5em;
+}
+body #side-left #icons div img {
+  padding-bottom: 0.5em;
+  width: 17px;
 }
 body #center {
   background: linear-gradient(180deg, #303030 0%, #121212 100%);
