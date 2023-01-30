@@ -1,2 +1,149 @@
 @import "./partials/reset";
 @import "./partials/variabili";
+
+body {
+  font-family: $font-family;
+  #side-left {
+    background-color: $black;
+    #icons {
+      color: $textGray;
+      border-bottom: 1px solid $lightgrey;
+      padding-bottom: 0.8em;
+      div {
+        span {
+          display: flex;
+          align-items: center;
+          i {
+            padding-right: 0.8em;
+            font-size: 1.2em;
+          }
+          img {
+            padding-bottom: 0.5em;
+            padding-top: 0.4em;
+            width: 20px;
+            margin-right: 0.8em;
+          }
+          p {
+            font-size: 0.8em;
+            font-weight: bold;
+            &:hover {
+              cursor: pointer;
+              color: $textWhite;
+            }
+          }
+        }
+      }
+    }
+  }
+  #center {
+    background: linear-gradient(180deg, #303030 0%, #121212 100%);
+  }
+  #side-right {
+    background-color: $black;
+  }
+  footer {
+    background-color: $player;
+  }
+}
+
+/* RIGHT SIDEBAR */
+
+.controlBar {
+  i {
+    color: $textWhite;
+    font-size: 0.7em;
+    cursor: pointer;
+  }
+}
+
+.rightColumn {
+  p {
+    color: $textWhite;
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+
+  i {
+    color: $textGray;
+  }
+}
+
+.avatars {
+  .leftImage {
+    #avatarCircle {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .boldName {
+    font-weight: bold;
+  }
+  p {
+    font-size: 0.6em;
+    color: $textGray;
+  }
+
+  .hours {
+    font-size: 0.5em;
+  }
+}
+// INIZIO SEZIONE CENTRALE
+
+#center {
+  padding: 0.5em 1em;
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    #dropdown {
+      background-color: $black;
+      &:hover{
+        background-color: $grey;
+      }
+      border-radius: 5em;
+      padding:0 0.3em;
+      color: $textWhite !important;
+      font-size: 0.8em;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      img{
+        width: 1.5em;
+        height: 1.3em;
+      }
+      .dropdown-menu {
+        font-size: 0.8em;
+        font-weight: bold;
+        background-color: $grey;
+        box-shadow: 0px 12px 26px -12px rgba(0, 0, 0, 0.79);
+        -webkit-box-shadow: 0px 12px 26px -12px rgba(0, 0, 0, 0.79);
+        li{
+          a{
+            color: $textWhite;
+            &:hover{
+              color: $grey;
+            }
+          }
+        }
+      }
+    }
+    .arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.5em;
+      border-radius: 50%;
+      background-color: $grey;
+      border: 1px solid $grey;
+      color: $textGray;
+      margin-right: 0.5em;
+    }
+  }
+  .container{
+    background: radial-gradient(95.7% 90.96% at 83.53% 6.67%, #2e2e2e 20%, #020202);
+    border-radius: 3px;
+    backdrop-filter: blur(29px);
+    height: 50%;
+    margin-top: 0.5em;
+  }
+}
