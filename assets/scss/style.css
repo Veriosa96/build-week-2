@@ -16,6 +16,7 @@ p {
 
 body {
   font-family: "Montserrat", sans-serif;
+  height: 100%;
 }
 body #side-left {
   background-color: black;
@@ -143,4 +144,17 @@ body footer {
           backdrop-filter: blur(29px);
   height: 50%;
   margin-top: 0.5em;
+}
+
+#second-section {
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+#second-section div div {
+  background-color: #3f3f3f;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  margin-right: 1.5em;
 }/*# sourceMappingURL=style.css.map */
