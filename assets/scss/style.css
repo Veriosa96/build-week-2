@@ -96,13 +96,23 @@ body footer {
   justify-content: space-between;
 }
 #center .topBar #dropdown {
+  border: 1px solid #171717;
+  background-color: #171717;
+  border-radius: 5em;
+  padding: 0 0.3em;
   color: white !important;
+  font-size: 0.8em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 #center .topBar #dropdown img {
   width: 1.5em;
   height: 1.3em;
 }
 #center .topBar #dropdown .dropdown-menu {
+  font-size: 0.8em;
+  font-weight: bold;
   background-color: #171717;
   box-shadow: 0px 12px 26px -12px rgba(0, 0, 0, 0.79);
   -webkit-box-shadow: 0px 12px 26px -12px rgba(0, 0, 0, 0.79);
