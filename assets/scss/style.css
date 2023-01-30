@@ -16,7 +16,6 @@ p {
 
 body {
   font-family: "Montserrat", sans-serif;
-  height: 100%;
 }
 body #side-left {
   background-color: black;
@@ -144,6 +143,7 @@ body footer {
           backdrop-filter: blur(29px);
   height: 50%;
   margin-top: 0.5em;
+<<<<<<< HEAD
 }
 
 #second-section {
@@ -157,4 +157,6 @@ body footer {
   display: flex;
   align-items: center;
   margin-right: 1.5em;
+=======
+>>>>>>> parent of edc5446 (finsh second card)
 }/*# sourceMappingURL=style.css.map */
