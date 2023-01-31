@@ -271,4 +271,40 @@ body footer {
 .thirdCard .cardBody p {
   color: lightgrey;
   font-size: 0.7em;
+}
+
+.boxAlbumPage {
+  display: flex;
+  margin-top: 1em;
+  color: white;
+  height: 55%;
+}
+.boxAlbumPage .mainAlbumPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-left: 1em;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+.boxAlbumPage .mainAlbumPage h1 {
+  font-size: 6em;
+  font-weight: bold;
+}
+.boxAlbumPage .mainAlbumPage .detailsAlbum {
+  font-size: 0.7em;
+}
+
+.playerAlbum {
+  display: flex;
+}
+.playerAlbum i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: #1db954;
+  border-radius: 50%;
+  font-size: 1.5em;
 }/*# sourceMappingURL=style.css.map */

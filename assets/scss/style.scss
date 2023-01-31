@@ -138,9 +138,7 @@ body {
       color: $textGray;
       margin-right: 0.5em;
     }
-
-  
-}
+  }
 }
 // INIZIO MAIN CARD
 .box {
@@ -153,69 +151,69 @@ body {
   backdrop-filter: blur(29px);
   height: 50%;
   margin-top: 0.5em;
-    #mainCard {
-  #dataTrack {
-    display: flex;
-    .mainAlbum {
-      margin-left: 1em;
-      color: $textWhite;
-      font-size: 0.6em;
-      font-weight: bold;
-      margin-top: 0.7em;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    .bodyCard h1,
-    p {
-      font-family: "Montserrat", sans-serif;
-      font-weight: lighter;
-      padding: 5px;
-    }
-    .buttonCard {
-      padding-top: 0.6em;
-      ul {
-        display: flex;
-        align-items: center;
-        .firstButton {
+  #mainCard {
+    #dataTrack {
+      display: flex;
+      .mainAlbum {
+        margin-left: 1em;
+        color: $textWhite;
+        font-size: 0.6em;
+        font-weight: bold;
+        margin-top: 0.7em;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .bodyCard h1,
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        padding: 5px;
+      }
+      .buttonCard {
+        padding-top: 0.6em;
+        ul {
           display: flex;
-          border: 1px solid $green;
-          background-color: $green;
-          border-radius: 3em;
-          width: 8em;
-          padding: 0.9em;
-          color: $black;
-        }
-        .secondButton {
-          border: 1px solid $lightgrey;
-          border-radius: 3em;
-          width: 8em;
-          padding: 0.9em;
-        }
-        li {
-          display: flex;
-          justify-content: center;
-          margin: 0 0.5em;
-        }
-        i {
-          margin-left: 0.5em;
-          font-size: 2.5em;
-          color: $lightgrey;
+          align-items: center;
+          .firstButton {
+            display: flex;
+            border: 1px solid $green;
+            background-color: $green;
+            border-radius: 3em;
+            width: 8em;
+            padding: 0.9em;
+            color: $black;
+          }
+          .secondButton {
+            border: 1px solid $lightgrey;
+            border-radius: 3em;
+            width: 8em;
+            padding: 0.9em;
+          }
+          li {
+            display: flex;
+            justify-content: center;
+            margin: 0 0.5em;
+          }
+          i {
+            margin-left: 0.5em;
+            font-size: 2.5em;
+            color: $lightgrey;
+          }
         }
       }
     }
   }
 }
-}
 .annunciHidden {
-button {
-  margin-top: 0.7em;
-  background-color: $lightgrey;
-  letter-spacing: 1.3px;
-  border-radius: 3em;
-  color:$textGray;
-  font-size: 0.5em;
-  border:none;
-  height: 8%;
-}
+  button {
+    margin-top: 0.7em;
+    background-color: $lightgrey;
+    letter-spacing: 1.3px;
+    border-radius: 3em;
+    color: $textGray;
+    font-size: 0.5em;
+    border: none;
+    height: 8%;
+  }
 }
 
 // FINE MAIN CARD
@@ -301,3 +299,42 @@ button {
     }
   }
 }
+
+// INIZIO ALBUM PAGE
+
+.boxAlbumPage {
+  display: flex;
+  margin-top: 1em;
+  color: $textWhite;
+  height: 55%;
+  .mainAlbumPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-left: 1em;
+    font-size: 0.7em;
+    font-weight: bold;
+    h1 {
+      font-size: 6em;
+      font-weight: bold;
+    }
+    .detailsAlbum {
+      font-size: 0.7em;
+    }
+  }
+}
+
+  .playerAlbum {
+    display: flex;
+    i{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 50px;
+      background-color: $green;
+      border-radius: 50%;
+      font-size: 1.5em;
+    }
+  }
+
