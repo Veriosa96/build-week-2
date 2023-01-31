@@ -277,7 +277,6 @@ body footer {
   display: flex;
   margin-top: 1em;
   color: white;
-  height: 55%;
 }
 .boxAlbumPage .mainAlbumPage {
   display: flex;
@@ -296,15 +295,19 @@ body footer {
 }
 
 .playerAlbum {
+  padding: 2em;
+  border-top: 0.3px solid;
   display: flex;
+  padding-left: 1em;
+  cursor: pointer;
 }
 .playerAlbum i {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 50px;
-  background-color: #1db954;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   font-size: 1.5em;
+  color: lightgrey;
 }/*# sourceMappingURL=style.css.map */
