@@ -3,8 +3,12 @@
 
 body {
   font-family: $font-family;
+  height: 100%;
   #side-left {
     background-color: $black;
+    @media screen and (max-width: 770px) {
+      display: none;
+    }
     #icons {
       color: $textGray;
       border-bottom: 1px solid $lightgrey;
@@ -47,6 +51,12 @@ body {
 }
 
 /* RIGHT SIDEBAR */
+
+#side-right {
+  @media screen and (max-width: 991px) {
+    display: none !important;
+  }
+}
 
 .controlBar {
   i {
@@ -92,9 +102,18 @@ body {
 
 #center {
   padding: 0.5em 1em;
-  .topBar {
-    display: flex;
-    justify-content: space-between;
+  .topBar2 {
+    .arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.5em;
+      border-radius: 50%;
+      color: $textGray;
+      margin-right: 0.5em;
+    }
+  }
+  .topBar1 {
     #dropdown {
       background-color: $black;
       &:hover {
@@ -138,9 +157,7 @@ body {
       color: $textGray;
       margin-right: 0.5em;
     }
-
-  
-}
+  }
 }
 // INIZIO MAIN CARD
 .box {
@@ -149,73 +166,76 @@ body {
     #2e2e2e 20%,
     #020202
   );
+  @media screen and (max-width: 770px) {
+    display: none !important;
+  }
   border-radius: 3px;
   backdrop-filter: blur(29px);
   height: 50%;
   margin-top: 0.5em;
-    #mainCard {
-  #dataTrack {
-    display: flex;
-    .mainAlbum {
-      margin-left: 1em;
-      color: $textWhite;
-      font-size: 0.6em;
-      font-weight: bold;
-      margin-top: 0.7em;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    .bodyCard h1,
-    p {
-      font-family: "Montserrat", sans-serif;
-      font-weight: lighter;
-      padding: 5px;
-    }
-    .buttonCard {
-      padding-top: 0.6em;
-      ul {
-        display: flex;
-        align-items: center;
-        .firstButton {
+  #mainCard {
+    #dataTrack {
+      display: flex;
+      .mainAlbum {
+        margin-left: 1em;
+        color: $textWhite;
+        font-size: 0.6em;
+        font-weight: bold;
+        margin-top: 0.7em;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .bodyCard h1,
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        padding: 5px;
+      }
+      .buttonCard {
+        padding-top: 0.6em;
+        ul {
           display: flex;
-          border: 1px solid $green;
-          background-color: $green;
-          border-radius: 3em;
-          width: 8em;
-          padding: 0.9em;
-          color: $black;
-        }
-        .secondButton {
-          border: 1px solid $lightgrey;
-          border-radius: 3em;
-          width: 8em;
-          padding: 0.9em;
-        }
-        li {
-          display: flex;
-          justify-content: center;
-          margin: 0 0.5em;
-        }
-        i {
-          margin-left: 0.5em;
-          font-size: 2.5em;
-          color: $lightgrey;
+          align-items: center;
+          .firstButton {
+            display: flex;
+            border: 1px solid $green;
+            background-color: $green;
+            border-radius: 3em;
+            width: 8em;
+            padding: 0.9em;
+            color: $black;
+          }
+          .secondButton {
+            border: 1px solid $lightgrey;
+            border-radius: 3em;
+            width: 8em;
+            padding: 0.9em;
+          }
+          li {
+            display: flex;
+            justify-content: center;
+            margin: 0 0.5em;
+          }
+          i {
+            margin-left: 0.5em;
+            font-size: 2.5em;
+            color: $lightgrey;
+          }
         }
       }
     }
   }
 }
-}
 .annunciHidden {
-button {
-  margin-top: 0.7em;
-  background-color: $lightgrey;
-  letter-spacing: 1.3px;
-  border-radius: 3em;
-  color:$textGray;
-  font-size: 0.5em;
-  border:none;
-  height: 8%;
-}
+  button {
+    margin-top: 0.7em;
+    background-color: $lightgrey;
+    letter-spacing: 1.3px;
+    border-radius: 3em;
+    color: $textGray;
+    font-size: 0.5em;
+    border: none;
+    height: 8%;
+  }
 }
 
 // FINE MAIN CARD
@@ -224,22 +244,19 @@ button {
 
 #cont {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   #second-section {
-    img {
-      width: 30%;
-      padding-right: 0.5em;
-    }
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    background-color: $lightgrey;
+    background-color: $lightgrey !important;
     color: $textWhite;
     margin-bottom: 0.8em;
-    width: 32%;
     &:hover {
-      background-color: rgb(97, 96, 96);
+      background-color: rgb(97, 96, 96) !important;
+    }
+    img {
+      padding-right: 0.5em;
     }
   }
 }

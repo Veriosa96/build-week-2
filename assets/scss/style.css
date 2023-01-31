@@ -16,9 +16,15 @@ p {
 
 body {
   font-family: "Montserrat", sans-serif;
+  height: 100%;
 }
 body #side-left {
   background-color: black;
+}
+@media screen and (max-width: 770px) {
+  body #side-left {
+    display: none;
+  }
 }
 body #side-left #icons {
   color: lightgrey;
@@ -58,6 +64,12 @@ body footer {
 }
 
 /* RIGHT SIDEBAR */
+@media screen and (max-width: 991px) {
+  #side-right {
+    display: none !important;
+  }
+}
+
 .controlBar i {
   color: white;
   font-size: 0.7em;
@@ -91,11 +103,16 @@ body footer {
 #center {
   padding: 0.5em 1em;
 }
-#center .topBar {
+#center .topBar2 .arrow {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  width: 1.5em;
+  border-radius: 50%;
+  color: lightgrey;
+  margin-right: 0.5em;
 }
-#center .topBar #dropdown {
+#center .topBar1 #dropdown {
   background-color: black;
   border-radius: 5em;
   padding: 0 0.3em;
@@ -105,27 +122,27 @@ body footer {
   display: flex;
   align-items: center;
 }
-#center .topBar #dropdown:hover {
+#center .topBar1 #dropdown:hover {
   background-color: #171717;
 }
-#center .topBar #dropdown img {
+#center .topBar1 #dropdown img {
   width: 1.5em;
   height: 1.3em;
 }
-#center .topBar #dropdown .dropdown-menu {
+#center .topBar1 #dropdown .dropdown-menu {
   font-size: 0.8em;
   font-weight: bold;
   background-color: #171717;
   box-shadow: 0px 12px 26px -12px rgba(0, 0, 0, 0.79);
   -webkit-box-shadow: 0px 12px 26px -12px rgba(0, 0, 0, 0.79);
 }
-#center .topBar #dropdown .dropdown-menu li a {
+#center .topBar1 #dropdown .dropdown-menu li a {
   color: white;
 }
-#center .topBar #dropdown .dropdown-menu li a:hover {
+#center .topBar1 #dropdown .dropdown-menu li a:hover {
   color: #171717;
 }
-#center .topBar .arrow {
+#center .topBar1 .arrow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,6 +161,11 @@ body footer {
           backdrop-filter: blur(29px);
   height: 50%;
   margin-top: 0.5em;
+}
+@media screen and (max-width: 770px) {
+  .box {
+    display: none !important;
+  }
 }
 .box #mainCard #dataTrack {
   display: flex;
@@ -209,24 +231,21 @@ body footer {
 /* SECOND SECTION */
 #cont {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 #cont #second-section {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
-  background-color: #3f3f3f;
+  background-color: #3f3f3f !important;
   color: white;
   margin-bottom: 0.8em;
-  width: 32%;
-}
-#cont #second-section img {
-  width: 30%;
-  padding-right: 0.5em;
 }
 #cont #second-section:hover {
-  background-color: rgb(97, 96, 96);
+  background-color: rgb(97, 96, 96) !important;
+}
+#cont #second-section img {
+  padding-right: 0.5em;
 }
 
 /* THIRD SECTION */

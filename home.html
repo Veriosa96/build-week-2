@@ -19,7 +19,7 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-3 ps-4" id="side-left">
+      <div class="col-md-3 ps-4" id="side-left">
         <div id="icons">
           <div class="d-flex flex-column pb-3">
             <i class="bi bi-three-dots"></i>
@@ -40,14 +40,14 @@
             <span><img src="./assets/image/heart.png" />
               <p>Brani che ti piacciono</p>
             </span>
-            <span><i class="bi bi-bookmark-fill"></i>
+            <span><i class="bi bi-bookmark-fill text-success"></i>
               <p>I tuoi episodi</p>
             </span>
           </div>
         </div>
       </div>
-      <div class="col-7" id="center">
-        <div class="topBar">
+      <div class="col-12 col-md-9 col-lg-7" id="center">
+        <div class="topBar1 d-none d-md-flex justify-content-between">
           <div class="d-flex">
             <div class="arrow"><i class="bi bi-chevron-left"></i></div>
             <div class="arrow"><i class="bi bi-chevron-right"></i></div>
@@ -70,6 +70,7 @@
               <li><a class="dropdown-item" href="#"></a></li>
             </ul>
           </div>
+
         </div>
         <!-- INIZIO MAIN CARD -->
         <div class="container box d-flex justify-content-between">
@@ -101,47 +102,56 @@
         <!-- FINE MAIN CARD -->
 
         <!-- SECOND CARD -->
-
-        <h5 class="my-3 text-light fw-bold">Buonasera</h5>
-        <div class="container m-0 p-0" id="cont">
-          <div id="second-section">
-            <img src="" alt="image">
-            <div class="card-body">
-              <p class="card-title">Song Title1</p>
-            </div>
-          </div>
-          <div id="second-section">
-            <img src="" alt="image">
-            <div class="card-body">
-              <p class="card-title">Song Title2</p>
-            </div>
-          </div>
-          <div id="second-section">
-            <img src="" alt="image">
-            <div class="card-body">
-              <p class="card-title">Song Title3</p>
-            </div>
-          </div>
-          <div id="second-section">
-            <img src="" alt="image">
-            <div class="card-body">
-              <p class="card-title">Song Title4</p>
-            </div>
-          </div>
-          <div id="second-section">
-            <img src="" alt="image">
-            <div class="card-body">
-              <p class="card-title">Song Title5</p>
-            </div>
-          </div>
-          <div id="second-section">
-            <img src="" alt="image">
-            <div class="card-body">
-              <p class="card-title">Song Title6</p>
+        <div class="d-flex justify-content-between">
+          <h5 class="my-3 text-light fw-bold">Buonasera</h5>
+          <div class="topBar2 d-flex justify-content-end d-md-none">
+            <div class="d-flex">
+              <div class="arrow"><i class="bi bi-bell"></i></i></div>
+              <div class="arrow"><i class="bi bi-clock-history"></i></div>
+              <div class="arrow"><i class="bi bi-gear"></i></div>
             </div>
           </div>
         </div>
-
+        <div class="container" id="cont">
+          <div class="row row-cols-2 row-cols-lg-3 justify-content-between">
+            <div class="card col" id="second-section">
+              <img src="" alt="image">
+              <div class="card-body">
+                <p class="card-title">Song Title2</p>
+              </div>
+            </div>
+            <div class="card col" id="second-section">
+              <img src="" alt="image">
+              <div class="card-body">
+                <p class="card-title">Song Title2</p>
+              </div>
+            </div>
+            <div class="card col" id="second-section">
+              <img src="" alt="image">
+              <div class="card-body">
+                <p class="card-title">Song Title3</p>
+              </div>
+            </div>
+            <div class="card col" id="second-section">
+              <img src="" alt="image">
+              <div class="card-body">
+                <p class="card-title">Song Title4</p>
+              </div>
+            </div>
+            <div class="card col" id="second-section">
+              <img src="" alt="image">
+              <div class="card-body">
+                <p class="card-title">Song Title5</p>
+              </div>
+            </div>
+            <div class="card col" id="second-section">
+              <img src="" alt="image">
+              <div class="card-body">
+                <p class="card-title">Song Title6</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <!--THIRD CARD SECTION-->
 
         <div class="row mt-3">
@@ -176,7 +186,7 @@
 
       <!--SIDE RIGHT-->
 
-      <div class="col-2 d-flex flex-column" id="side-right">
+      <div class="col-lg-2 d-flex flex-column" id="side-right">
         <div class="controlBar d-flex justify-content-end mt-1">
           <i class="bi bi-dash-lg"></i>
           <i class="bi bi-back ms-4"></i>
@@ -242,6 +252,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+  <script src="./assets/js/javascript.js"></script>
 </body>
 
 </html>
