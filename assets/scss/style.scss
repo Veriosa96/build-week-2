@@ -3,7 +3,6 @@
 
 body {
   font-family: $font-family;
-  height: 100%;
   #side-left {
     background-color: $black;
     @media screen and (max-width: 770px) {
@@ -48,6 +47,11 @@ body {
   footer {
     background-color: $player;
   }
+}
+
+.contAdina {
+  width: 100%;
+  height: 100vh;
 }
 
 /* RIGHT SIDEBAR */
@@ -101,7 +105,9 @@ body {
 // INIZIO SEZIONE CENTRALE
 
 #center {
+  overflow-y: auto;
   padding: 0.5em 1em;
+  height: 100rem !important;
   .topBar2 {
     .arrow {
       display: flex;
@@ -159,6 +165,7 @@ body {
     }
   }
 }
+
 // INIZIO MAIN CARD
 .box {
   background: radial-gradient(
@@ -171,7 +178,6 @@ body {
   }
   border-radius: 3px;
   backdrop-filter: blur(29px);
-  height: 50%;
   margin-top: 0.5em;
   #mainCard {
     #dataTrack {
@@ -317,4 +323,22 @@ body {
       font-size: 0.7em;
     }
   }
+}
+
+/* footer2 */
+.footer2 {
+  padding: 1em 0em;
+  color: $textGray;
+  p {
+    font-size: 0.8em;
+  }
+  i {
+    font-size: 1.1em;
+    &:hover {
+      color: $textWhite;
+    }
+  }
+  position: sticky;
+  bottom: 0;
+  background: linear-gradient(180deg, #30303000 0%, #121212 100%);
 }

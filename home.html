@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid contAdina">
     <div class="row">
       <div class="col-md-3 ps-4" id="side-left">
         <div id="icons">
@@ -71,8 +71,8 @@
               <li><a class="dropdown-item" href="#"></a></li>
             </ul>
           </div>
-
         </div>
+
         <!-- INIZIO MAIN CARD -->
         <div class="container box d-flex justify-content-between">
           <div class="row" id="mainCard">
@@ -99,11 +99,10 @@
             <button>NASCONDI ANNUNCI</button>
           </div>
         </div>
-
         <!-- FINE MAIN CARD -->
 
         <!-- SECOND CARD -->
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between py-3">
           <h5 class="my-3 text-light fw-bold">Buonasera</h5>
           <div class="topBar2 d-flex justify-content-end d-md-none">
             <div class="d-flex">
@@ -113,7 +112,10 @@
             </div>
           </div>
         </div>
-
+        <div class="d-flex d-md-none text-light pb-4">
+          <p class="px-4">Musica</p>
+          <p>Podcast e show</p>
+        </div>
         <div class="container" id="cont">
           <div class="row row-cols-2 row-cols-lg-3 justify-content-between">
             <div class="card col" id="second-section">
@@ -187,6 +189,20 @@
         </div>
       </div>
 
+      <!-- footer mobile version -->
+      <footer class="footer2 d-flex justify-content-evenly d-md-none m-0 p-0 text-center">
+        <div>
+          <i class="bi bi-house-door-fill"></i>
+          <p>Home</p>
+        </div>
+        <div><i class="bi bi-search"></i>
+          <p>Cerca</p>
+        </div>
+        <div> <i class="bi bi-music-note-list"></i>
+          <p>Libreria</p>
+        </div>
+      </footer>
+
       <!--SIDE RIGHT-->
 
       <div class="col-lg-2 d-flex flex-column" id="side-right">
@@ -251,7 +267,8 @@
       </div>
     </div>
   </div>
-  <footer>Music Bar</footer>
+  <!--   <footer>Music Bar</footer> -->
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
