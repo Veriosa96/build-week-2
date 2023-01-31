@@ -51,6 +51,12 @@ body {
 
 /* RIGHT SIDEBAR */
 
+#side-right {
+  @media screen and (max-width: 991px) {
+    display: none !important;
+  }
+}
+
 .controlBar {
   i {
     color: $textWhite;

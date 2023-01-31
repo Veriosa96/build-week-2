@@ -63,6 +63,12 @@ body footer {
 }
 
 /* RIGHT SIDEBAR */
+@media screen and (max-width: 991px) {
+  #side-right {
+    display: none !important;
+  }
+}
+
 .controlBar i {
   color: white;
   font-size: 0.7em;
