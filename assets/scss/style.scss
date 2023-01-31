@@ -379,6 +379,10 @@ body {
     color: $textWhite;
     font-size: 0.9em;
   }
+
+  .noneDesktop {
+    display: none;
+  }
 }
 
 .center {
@@ -392,6 +396,10 @@ body {
   p {
     color: rgb(149, 137, 137);
     font-size: 0.8em;
+  }
+
+  i {
+    display: none;
   }
 }
 
@@ -414,4 +422,66 @@ body {
   }
 }
 
-// Commento a caso per committare
+// Inizio responsive mobile artist page
+
+@media screen and (max-width: 770px) {
+  .mobileview {
+    display: flex;
+    justify-content: space-between;
+  }
+  .reverse {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popolari {
+    font-size: 1em;
+  }
+
+  .hiddenMobile {
+    display: none;
+  }
+
+  .downMobile {
+    position: relative;
+    top: 48px;
+  }
+
+  .reverseMobileIcon {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .follow {
+    border: none;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 0px 5px;
+  }
+
+  .circlePlay {
+    order: 3;
+    // position: relative;
+    // left: 170px;
+  }
+
+  .noneDesktop {
+    display: block !important;
+  }
+
+  .center {
+    display: none;
+  }
+
+  .right {
+    p {
+      display: none;
+    }
+
+    i {
+      display: block;
+      color: rgb(236, 236, 236);
+      font-size: 1.3em;
+    }
+  }
+}

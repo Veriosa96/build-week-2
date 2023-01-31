@@ -344,6 +344,9 @@ body footer {
   color: white;
   font-size: 0.9em;
 }
+.left .noneDesktop {
+  display: none;
+}
 
 .center p {
   color: rgb(149, 137, 137);
@@ -353,6 +356,9 @@ body footer {
 .right p {
   color: rgb(149, 137, 137);
   font-size: 0.8em;
+}
+.right i {
+  display: none;
 }
 
 #imageArtistCircle {
@@ -369,4 +375,52 @@ body footer {
 .rightTextImage p {
   color: rgb(149, 137, 137);
   font-size: 0.6em;
+}
+
+@media screen and (max-width: 770px) {
+  .mobileview {
+    display: flex;
+    justify-content: space-between;
+  }
+  .reverse {
+    display: flex;
+    flex-direction: column;
+  }
+  .popolari {
+    font-size: 1em;
+  }
+  .hiddenMobile {
+    display: none;
+  }
+  .downMobile {
+    position: relative;
+    top: 48px;
+  }
+  .reverseMobileIcon {
+    display: flex;
+    justify-content: space-between;
+  }
+  .follow {
+    border: none;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 0px 5px;
+  }
+  .circlePlay {
+    order: 3;
+  }
+  .noneDesktop {
+    display: block !important;
+  }
+  .center {
+    display: none;
+  }
+  .right p {
+    display: none;
+  }
+  .right i {
+    display: block;
+    color: rgb(236, 236, 236);
+    font-size: 1.3em;
+  }
 }/*# sourceMappingURL=style.css.map */

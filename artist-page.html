@@ -107,12 +107,12 @@
                   <div
                     class="card-img-overlay d-flex flex-column justify-content-end textBox"
                   >
-                    <p>
-                      <i class="bi bi-patch-check-fill me-2"></i
+                    <p class="hiddenMobile">
+                      <i class="bi bi-patch-check-fill me-2 hiddenMobile"></i
                       ><small>Artista verificato</small>
                     </p>
                     <h5 class="card-title">Yellowcard</h5>
-                    <p class="card-text">
+                    <p class="card-text downMobile">
                       <small>3.433.168 ascoltatori mensili</small>
                     </p>
                   </div>
@@ -121,7 +121,7 @@
             </div>
           </div>
 
-          <div class="container mt-4">
+          <div class="container mt-5 mt-lg-4 mobileview">
             <div class="row">
               <div class="col d-flex align-items-center">
                 <div
@@ -130,7 +130,7 @@
                   <i class="bi bi-play-fill"></i>
                 </div>
                 <button type="button" class="btn btn-outline-light follow me-4">
-                  <p class="p-1">FOLLOWING</p>
+                  <p class="p-1 buttonFollowMobile">FOLLOWING</p>
                 </button>
                 <div class="threeDots">
                   <i class="bi bi-three-dots"></i>
@@ -139,8 +139,8 @@
             </div>
           </div>
 
-          <div class="container mt-4">
-            <div class="row">
+          <div class="container mt-4 mt-lg-0">
+            <div class="row reverse">
               <div class="col">
                 <p class="popolari">Popolari</p>
                 <div class="container">
@@ -156,17 +156,23 @@
                           alt=""
                           class="me-3"
                         />
-                        <p>nome album</p>
+                        <div>
+                          <p class="noneMobile">nome album</p>
+                          <p class="noneDesktop">276.968.994</p>
+                        </div>
                       </div>
                       <div class="center">
                         <p>276.968.994</p>
                       </div>
-                      <div class="right"><p>3:18</p></div>
+                      <div class="right">
+                        <p class="">3:18</p>
+                        <i class="bi bi-three-dots"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-12 col-md-4 mt-5 mt-lg-0">
                 <div class="row popolari"><p>Brani che ti piacciono</p></div>
 
                 <div class="row">
