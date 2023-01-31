@@ -317,6 +317,11 @@ body footer {
   background-color: #1db954;
   border-radius: 50%;
 }
+.circlePlay:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 24px -6px rgba(29, 235, 102, 0.76);
+  -webkit-box-shadow: 0px 0px 24px -6px rgba(29, 235, 102, 0.76);
+}
 .circlePlay i {
   font-size: 1.8em;
   color: black;
@@ -342,6 +347,9 @@ body footer {
 .threeDots i {
   color: lightgrey;
   font-size: 1.2em;
+}
+.threeDots:hover {
+  cursor: pointer;
 }
 
 .left #smallCover {
@@ -374,6 +382,9 @@ body footer {
   height: 50px;
   border-radius: 50%;
 }
+#imageArtistCircle:hover {
+  cursor: pointer;
+}
 
 .rightTextImage .whiteText {
   color: white;
@@ -383,6 +394,12 @@ body footer {
 .rightTextImage p {
   color: rgb(149, 137, 137);
   font-size: 0.6em;
+}
+
+.hoverArtist:hover {
+  cursor: pointer;
+  background-color: rgba(63, 63, 63, 0.4901960784);
+  border-radius: 6px;
 }
 
 @media screen and (max-width: 770px) {
