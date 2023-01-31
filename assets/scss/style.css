@@ -303,6 +303,10 @@ body footer {
   font-size: 3em;
 }
 
+.shuffle {
+  display: none;
+}
+
 .circlePlay {
   width: 50px;
   height: 50px;
@@ -381,6 +385,7 @@ body footer {
   .mobileview {
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
   }
   .reverse {
     display: flex;
@@ -395,6 +400,7 @@ body footer {
   .downMobile {
     position: relative;
     top: 48px;
+    font-weight: 400 !important;
   }
   .reverseMobileIcon {
     display: flex;
@@ -406,8 +412,10 @@ body footer {
     border-radius: 30px;
     padding: 0px 5px;
   }
-  .circlePlay {
-    order: 3;
+  .shuffle {
+    display: block;
+    color: lightgrey;
+    font-size: 1.6em;
   }
   .noneDesktop {
     display: block !important;
@@ -421,6 +429,9 @@ body footer {
   .right i {
     display: block;
     color: rgb(236, 236, 236);
+    font-size: 1.3em;
+  }
+  .rightTextImage {
     font-size: 1.3em;
   }
 }/*# sourceMappingURL=style.css.map */
