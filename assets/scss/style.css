@@ -16,15 +16,9 @@ p {
 
 body {
   font-family: "Montserrat", sans-serif;
-  height: 100%;
 }
 body #side-left {
   background-color: black;
-}
-@media screen and (max-width: 770px) {
-  body #side-left {
-    display: none;
-  }
 }
 body #side-left #icons {
   color: lightgrey;

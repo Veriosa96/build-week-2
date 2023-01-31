@@ -3,12 +3,8 @@
 
 body {
   font-family: $font-family;
-  height: 100%;
   #side-left {
     background-color: $black;
-    @media screen and (max-width: 770px) {
-      display: none;
-    }
     #icons {
       color: $textGray;
       border-bottom: 1px solid $lightgrey;
