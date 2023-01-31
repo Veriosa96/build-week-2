@@ -145,6 +145,29 @@ body footer {
   margin-top: 0.5em;
 }
 
+/* SECOND SECTION */
+#cont {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#cont #second-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3f3f3f;
+  color: white;
+  margin-bottom: 0.8em;
+  width: 32%;
+}
+#cont #second-section img {
+  width: 30%;
+  padding-right: 0.5em;
+}
+#cont #second-section:hover {
+  background-color: rgb(97, 96, 96);
+}
+
 /* THIRD SECTION */
 .leftSection p {
   color: white;

@@ -1,211 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./assets/scss/style.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <div class="row">
-      <div class="col-3 ps-4" id="side-left">
-        <div id="icons">
-          <div class="d-flex flex-column pb-3">
-            <i class="bi bi-three-dots"></i>
-            <span
-              ><i class="bi bi-house-door-fill"></i>
-              <p>Home</p>
-            </span>
-            <span
-              ><i class="bi bi-search"></i>
-              <p>Cerca</p>
-            </span>
-            <span
-              ><i class="bi bi-music-note-list"></i>
-              <p>La tua libreria</p>
-            </span>
-          </div>
-          <div class="d-flex flex-column">
-            <span
-              ><i class="bi bi-plus-square-fill"></i>
-              <p>Crea playlist</p>
-            </span>
-            <span
-              ><img src="./assets/image/heart.png" />
-              <p>Brani che ti piacciono</p>
-            </span>
-            <span
-              ><i class="bi bi-bookmark-fill"></i>
-              <p>I tuoi episodi</p>
-            </span>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/scss/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-3 ps-4" id="side-left">
+      <div id="icons">
+        <div class="d-flex flex-column pb-3">
+          <i class="bi bi-three-dots"></i>
+          <span><i class="bi bi-house-door-fill"></i>
+            <p>Home</p>
+          </span>
+          <span><i class="bi bi-search"></i>
+            <p>Cerca</p>
+          </span>
+          <span><i class="bi bi-music-note-list"></i>
+            <p>La tua libreria</p>
+          </span>
         </div>
-      </div>
-      <div class="col-7" id="center">
-        <div class="topBar">
-          <div class="d-flex">
-            <div class="arrow"><i class="bi bi-chevron-left"></i></div>
-            <div class="arrow"><i class="bi bi-chevron-right"></i></div>
-          </div>
-          <div id="dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <img
-                src="./assets/image/kisspng-computer-icons-clip-art-three-people-5b2d808212f1b8.4963498515297086740776.png"
-                alt=""
-              />
-              Account
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Adina Iamandi</a></li>
-              <li><a class="dropdown-item" href="#">Sara Di Luca</a></li>
-              <li><a class="dropdown-item" href="#">Marco Sorrentino</a></li>
-              <li><a class="dropdown-item" href="#">Saverio Caracappa</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#"></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="container box">
-          <div class="row" id="mainCard"></div>
-        </div>
-
-        <!--THIRD CARD SECTION-->
-
-        <div class="row mt-3">
-          <div class="col">
-            <div class="leftSection">
-              <p>Altro di ciò che ti piace</p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="rightSection">
-              <p class="text-end">VISUALIZZA TUTTO</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-3">
-          <div class="col">
-            <div class="thirdCard">
-              <div class="img d-flex justify-content-center pt-3">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/%22Shakerando%22_by_Rhove_%28album_cover%29.png/600px-%22Shakerando%22_by_Rhove_%28album_cover%29.png"
-                  alt=""
-                />
-              </div>
-              <div class="cardBody p-3">
-                <h5>Titolo album</h5>
-                <p>Artista</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--SIDE RIGHT-->
-
-      <div class="col-2 d-flex flex-column" id="side-right">
-        <div class="controlBar d-flex justify-content-end mt-1">
-          <i class="bi bi-dash-lg"></i>
-          <i class="bi bi-back ms-4"></i>
-          <i class="bi bi-x-lg ms-4 me-2"></i>
-        </div>
-        <div class="rightColumn pt-3 d-flex justify-content-between">
-          <p>Attività amici</p>
-          <div class="rightIcons pe-2">
-            <i class="bi bi-person-add pe-1"></i>
-            <i class="bi bi-x-lg"></i>
-          </div>
-        </div>
-        <div class="avatars d-flex justify-content-between pt-4">
-          <div class="leftImage d-flex">
-            <img
-              id="avatarCircle"
-              src="./assets/image/avatar1.png"
-              alt="avatar1"
-            />
-            <div class="d-flex flex-column ms-2">
-              <p class="boldName">Charlie Hookham</p>
-              <p class="mt-1">In Camera • Yumi Zouma</p>
-              <p class="mt-1"><i class="bi bi-record-circle"></i> EP III</p>
-            </div>
-          </div>
-
-          <p class="me-2 hours">4 ore</p>
-        </div>
-
-        <!--AVATAR 2-->
-
-        <div class="avatars d-flex justify-content-between pt-4">
-          <div class="leftImage d-flex">
-            <img
-              id="avatarCircle"
-              src="./assets/image/avatar2.jpg"
-              alt="avatar1"
-            />
-            <div class="d-flex flex-column ms-2">
-              <p class="boldName">lightdark02</p>
-              <p class="mt-1">Aimed to Kill • Jade LeMac</p>
-              <p class="mt-1">
-                <i class="bi bi-record-circle"></i> Aimed to Kill
-              </p>
-            </div>
-          </div>
-
-          <p class="me-2 hours">8 ore</p>
-        </div>
-
-        <!--AVATAR 3-->
-
-        <div class="avatars d-flex justify-content-between pt-4">
-          <div class="leftImage d-flex">
-            <img
-              id="avatarCircle"
-              src="./assets/image/avatr3.png"
-              alt="avatar1"
-            />
-            <div class="d-flex flex-column ms-2">
-              <p class="boldName">Valeria Traverso</p>
-              <p class="mt-1">New Kings • Sleeping Wolf</p>
-              <p class="mt-1">
-                <i class="bi bi-music-note-beamed"></i> Twist Badass mood
-              </p>
-            </div>
-          </div>
-
-          <p class="me-2 hours">3 giorni</p>
+        <div class="d-flex flex-column">
+          <span><i class="bi bi-plus-square-fill"></i>
+            <p>Crea playlist</p>
+          </span>
+          <span><img src="./assets/image/heart.png" />
+            <p>Brani che ti piacciono</p>
+          </span>
+          <span><i class="bi bi-bookmark-fill"></i>
+            <p>I tuoi episodi</p>
+          </span>
         </div>
       </div>
     </div>
-    <footer>Music Bar</footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <div class="col-7" id="center">
+      <div class="topBar">
+        <div class="d-flex">
+          <div class="arrow"><i class="bi bi-chevron-left"></i></div>
+          <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+        </div>
+        <div id="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img
+              src="./assets/image/kisspng-computer-icons-clip-art-three-people-5b2d808212f1b8.4963498515297086740776.png"
+              alt="" />
+            Account
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Adina Iamandi</a></li>
+            <li><a class="dropdown-item" href="#">Sara Di Luca</a></li>
+            <li><a class="dropdown-item" href="#">Marco Sorrentino</a></li>
+            <li><a class="dropdown-item" href="#">Saverio Caracappa</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container box">
+        <div class="row" id="mainCard"></div>
+      </div>
+
+      <!-- SECOND CARD -->
+
+      <h5 class="my-3 text-light fw-bold">Buonasera</h5>
+      <div class="container m-0 p-0" id="cont">
+        <div id="second-section">
+          <img src="" alt="image">
+          <div class="card-body">
+            <p class="card-title">Song Title1</p>
+          </div>
+        </div>
+        <div id="second-section">
+          <img src="" alt="image">
+          <div class="card-body">
+            <p class="card-title">Song Title2</p>
+          </div>
+        </div>
+        <div id="second-section">
+          <img src="" alt="image">
+          <div class="card-body">
+            <p class="card-title">Song Title3</p>
+          </div>
+        </div>
+        <div id="second-section">
+          <img src="" alt="image">
+          <div class="card-body">
+            <p class="card-title">Song Title4</p>
+          </div>
+        </div>
+        <div id="second-section">
+          <img src="" alt="image">
+          <div class="card-body">
+            <p class="card-title">Song Title5</p>
+          </div>
+        </div>
+        <div id="second-section">
+          <img src="" alt="image">
+          <div class="card-body">
+            <p class="card-title">Song Title6</p>
+          </div>
+        </div>
+      </div>
+
+      <!--THIRD CARD SECTION-->
+
+      <div class="row mt-3">
+        <div class="col">
+          <div class="leftSection">
+            <p>Altro di ciò che ti piace</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="rightSection">
+            <p class="text-end">VISUALIZZA TUTTO</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col">
+          <div class="thirdCard">
+            <div class="img d-flex justify-content-center pt-3">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/%22Shakerando%22_by_Rhove_%28album_cover%29.png/600px-%22Shakerando%22_by_Rhove_%28album_cover%29.png"
+                alt="" />
+            </div>
+            <div class="cardBody p-3">
+              <h5>Titolo album</h5>
+              <p>Artista</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--SIDE RIGHT-->
+
+    <div class="col-2 d-flex flex-column" id="side-right">
+      <div class="controlBar d-flex justify-content-end mt-1">
+        <i class="bi bi-dash-lg"></i>
+        <i class="bi bi-back ms-4"></i>
+        <i class="bi bi-x-lg ms-4 me-2"></i>
+      </div>
+      <div class="rightColumn pt-3 d-flex justify-content-between">
+        <p>Attività amici</p>
+        <div class="rightIcons pe-2">
+          <i class="bi bi-person-add pe-1"></i>
+          <i class="bi bi-x-lg"></i>
+        </div>
+      </div>
+      <div class="avatars d-flex justify-content-between pt-4">
+        <div class="leftImage d-flex">
+          <img id="avatarCircle" src="./assets/image/avatar1.png" alt="avatar1" />
+          <div class="d-flex flex-column ms-2">
+            <p class="boldName">Charlie Hookham</p>
+            <p class="mt-1">In Camera • Yumi Zouma</p>
+            <p class="mt-1"><i class="bi bi-record-circle"></i> EP III</p>
+          </div>
+        </div>
+
+        <p class="me-2 hours">4 ore</p>
+      </div>
+
+      <!--AVATAR 2-->
+
+      <div class="avatars d-flex justify-content-between pt-4">
+        <div class="leftImage d-flex">
+          <img id="avatarCircle" src="./assets/image/avatar2.jpg" alt="avatar1" />
+          <div class="d-flex flex-column ms-2">
+            <p class="boldName">lightdark02</p>
+            <p class="mt-1">Aimed to Kill • Jade LeMac</p>
+            <p class="mt-1">
+              <i class="bi bi-record-circle"></i> Aimed to Kill
+            </p>
+          </div>
+        </div>
+
+        <p class="me-2 hours">8 ore</p>
+      </div>
+
+      <!--AVATAR 3-->
+
+      <div class="avatars d-flex justify-content-between pt-4">
+        <div class="leftImage d-flex">
+          <img id="avatarCircle" src="./assets/image/avatr3.png" alt="avatar1" />
+          <div class="d-flex flex-column ms-2">
+            <p class="boldName">Valeria Traverso</p>
+            <p class="mt-1">New Kings • Sleeping Wolf</p>
+            <p class="mt-1">
+              <i class="bi bi-music-note-beamed"></i> Twist Badass mood
+            </p>
+          </div>
+        </div>
+
+        <p class="me-2 hours">3 giorni</p>
+      </div>
+    </div>
+  </div>
+  <footer>Music Bar</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
