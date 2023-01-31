@@ -429,6 +429,11 @@ body {
 // Inizio responsive mobile artist page
 
 @media screen and (max-width: 770px) {
+  h5 {
+    position: relative;
+    top: 25px;
+  }
+
   .mobileview {
     display: flex;
     justify-content: space-between;
