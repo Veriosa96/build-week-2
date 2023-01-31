@@ -269,18 +269,16 @@ body footer {
 
 .thirdCard {
   background-color: #171717;
-  width: 11em;
-  height: 270px;
-  border-radius: 5px;
+  padding: 1em;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin: 0.5em;
 }
 .thirdCard:hover {
   background-color: #323232;
 }
 .thirdCard .img img {
-  width: 9.5em;
-  height: 9.5em;
+  width: 9em;
   border-radius: 5px;
 }
 .thirdCard .img img:hover {
