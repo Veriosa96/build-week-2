@@ -279,6 +279,8 @@ body footer {
   color: white;
 }
 .boxAlbumPage .mainAlbumPage {
+  padding-top: 5em;
+  padding-bottom: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -295,7 +297,7 @@ body footer {
 }
 
 .playerAlbum {
-  padding: 2em;
+  padding-top: 1em;
   border-top: 0.3px solid;
   display: flex;
   padding-left: 1em;
@@ -310,4 +312,24 @@ body footer {
   border-radius: 50%;
   font-size: 1.5em;
   color: lightgrey;
+}
+
+.bodyAlbum {
+  padding-top: 3em;
+  color: lightgrey;
+  font-size: 0.5em;
+}
+.bodyAlbum ul {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #3f3f3f;
+  padding: 0 2.5em;
+  margin: 2.5em;
+}
+.bodyAlbum ul span {
+  display: flex;
+  padding-right: 10em;
+}
+.bodyAlbum ul span li {
+  padding-left: 30em;
 }/*# sourceMappingURL=style.css.map */
