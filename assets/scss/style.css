@@ -391,10 +391,17 @@ body footer {
   }
   .arrowMobile {
     display: block;
+    background-color: rgba(46, 46, 46, 0.5176470588);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .arrowMobile i {
+    color: white;
   }
   h5 {
     position: relative;
-    top: 25px;
+    top: 95px;
   }
   .mobileview {
     display: flex;

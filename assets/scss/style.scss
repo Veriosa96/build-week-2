@@ -439,11 +439,19 @@ body {
 
   .arrowMobile {
     display: block;
+    background-color: #2e2e2e84;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    i {
+      color: $textWhite;
+    }
   }
 
   h5 {
     position: relative;
-    top: 25px;
+    top: 95px;
   }
 
   .mobileview {
