@@ -316,6 +316,10 @@ body {
   object-fit: cover;
 }
 
+.arrowMobile {
+  display: none;
+}
+
 .textBox {
   i {
     color: #3d91f4;
@@ -429,6 +433,14 @@ body {
 // Inizio responsive mobile artist page
 
 @media screen and (max-width: 770px) {
+  .topBar {
+    display: none !important;
+  }
+
+  .arrowMobile {
+    display: block;
+  }
+
   h5 {
     position: relative;
     top: 25px;

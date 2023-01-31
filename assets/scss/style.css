@@ -290,6 +290,10 @@ body footer {
      object-fit: cover;
 }
 
+.arrowMobile {
+  display: none;
+}
+
 .textBox i {
   color: #3d91f4;
   font-size: 1.2em;
@@ -382,6 +386,12 @@ body footer {
 }
 
 @media screen and (max-width: 770px) {
+  .topBar {
+    display: none !important;
+  }
+  .arrowMobile {
+    display: block;
+  }
   h5 {
     position: relative;
     top: 25px;
