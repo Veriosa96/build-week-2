@@ -20,6 +20,11 @@ body {
 body #side-left {
   background-color: black;
 }
+@media screen and (max-width: 770px) {
+  body #side-left {
+    display: none;
+  }
+}
 body #side-left #icons {
   color: lightgrey;
   border-bottom: 1px solid #3f3f3f;
