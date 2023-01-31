@@ -316,11 +316,13 @@ body footer {
   height: 50px;
   background-color: #1db954;
   border-radius: 50%;
+  transition: all 0.2s ease-in-out;
 }
 .circlePlay:hover {
   cursor: pointer;
   box-shadow: 0px 0px 24px -6px rgba(29, 235, 102, 0.76);
   -webkit-box-shadow: 0px 0px 24px -6px rgba(29, 235, 102, 0.76);
+  transform: scale(1.1);
 }
 .circlePlay i {
   font-size: 1.8em;
