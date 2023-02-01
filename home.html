@@ -112,9 +112,9 @@
             </div>
           </div>
         </div>
-        <div class="d-flex d-md-none text-light py-4">
-          <p class="px-4">Musica</p>
-          <p>Podcast e show</p>
+        <div class="d-flex d-md-none py-4">
+          <button class="bottoni mx-2 btn rounded-pill px-3">Musica</button>
+          <button class="bottoni btn rounded-pill px-3">Podcast e show</button>
         </div>
         <div class="container" id="cont">
           <div class="row row-cols-2 row-cols-lg-3 justify-content-between">
@@ -158,7 +158,7 @@
         </div>
         <!--THIRD CARD SECTION-->
 
-        <div class="row mt-3">
+        <div class="row mt-3 d-none d-md-block">
           <div class="col">
             <div class="leftSection">
               <p>Altro di ciò che ti piace</p>
@@ -171,17 +171,30 @@
           </div>
         </div>
         <div class="container">
-          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 mt-3">
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mt-3">
             <div class="col p-0">
-              <div class="card thirdCard d-flex flex-row d-md-block">
-                <div class="img d-flex justify-content-center">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/%22Shakerando%22_by_Rhove_%28album_cover%29.png/600px-%22Shakerando%22_by_Rhove_%28album_cover%29.png"
-                    alt="" />
+              <div class="card thirdCard d-flex justify-content-evenly">
+                <div class=" d-flex flex-row d-md-block">
+                  <div class="img d-flex justify-content-center">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/%22Shakerando%22_by_Rhove_%28album_cover%29.png/600px-%22Shakerando%22_by_Rhove_%28album_cover%29.png"
+                      alt="" />
+                  </div>
+                  <div class="cardBody p-3">
+                    <h5>Titolo album</h5>
+                    <p>Artista</p>
+                  </div>
                 </div>
-                <div class="cardBody p-3">
-                  <h5>Titolo album</h5>
-                  <p>Artista</p>
+                <div class="albumCardFooter pt-3 d-flex justify-content-between align-items-center d-md-none">
+                  <div><i class="bi bi-heart-fill text-success"></i>
+                    <i class="bi bi-three-dots-vertical px-3"></i>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <p class="px-3">16 brani</p>
+                    <div class="palyAlbum rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-play-fill text-light"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
