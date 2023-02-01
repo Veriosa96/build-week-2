@@ -27,7 +27,14 @@ const mainSong = async () => {
     </div>
   </div>
   `;
+  let idArtist = favSong.artist.id;
+  let idAlbum = favSong.album.id;
+  console.log("idArtist", idArtist);
+  console.log("idAlbum", idAlbum);
+
+  return idArtist, idAlbum;
 };
+
 /* FIRST SECTION */
 const nascondi = () => {
   let element = document.querySelectorAll(".box");
@@ -53,12 +60,14 @@ const secondSection = async () => {
     canzoni[4],
     canzoni[5]
   ];
-  favSongs.forEach(({ title_short, album }) => {
+  favSongs.forEach(({ title_short, album, artist }) => {
     second.innerHTML += `<div class="card col" id="second-section">
       <img src="${album.cover_small}" alt="image">
       <div class="card-body">
         <p class="card-title">${title_short}</p>
       </div>`;
+    let idArtist = artist.id;
+    let idAlbum = album.id;
   });
 };
 
