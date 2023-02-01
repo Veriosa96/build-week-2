@@ -73,7 +73,7 @@ const thirdSection = async () => {
     <div class="col p-0">
     <div class="card thirdCard d-flex justify-content-evenly">
     <div class="d-flex flex-row d-md-block">
-      <div class="img d-flex justify-content-center">
+      <div class="img d-flex justify-content-center ">
         <img
           src="${album.cover_medium}"
           alt=""
