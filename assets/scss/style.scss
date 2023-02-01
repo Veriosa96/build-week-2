@@ -3,8 +3,12 @@
 
 body {
   font-family: $font-family;
+
   #side-left {
     background-color: $black;
+    @media screen and (max-width: 770px) {
+      display: none;
+    }
     #icons {
       color: $textGray;
       border-bottom: 1px solid $lightgrey;
@@ -37,6 +41,7 @@ body {
   }
   #center {
     background: linear-gradient(180deg, #303030 0%, #121212 100%);
+
   }
   #side-right {
     background-color: $black;
@@ -48,6 +53,11 @@ body {
 
 /* RIGHT SIDEBAR */
 
+#side-right {
+  @media screen and (max-width: 991px) {
+    display: none !important;
+  }
+}
 .controlBar {
   i {
     color: $textWhite;
@@ -95,6 +105,15 @@ body {
   .topBar {
     display: flex;
     justify-content: space-between;
+          @media screen and (min-width:576px) {
+        .arrowBack{
+          width: 100vh;
+          display: flex;
+          justify-content: start;
+          color: $textGray;
+        }
+      }
+    }
     #dropdown {
       background-color: $black;
       &:hover {
@@ -110,7 +129,8 @@ body {
       img {
         width: 1.5em;
         height: 1.3em;
-      }
+        }
+      
       .dropdown-menu {
         font-size: 0.8em;
         font-weight: bold;
@@ -139,7 +159,7 @@ body {
       margin-right: 0.5em;
     }
   }
-}
+
 // INIZIO MAIN CARD
 .box {
   background: radial-gradient(
@@ -285,6 +305,7 @@ body {
       }
     }
   }
+}
 
   .cardBody {
     h5 {
@@ -298,7 +319,7 @@ body {
       font-size: 0.7em;
     }
   }
-}
+
 
 // INIZIO ALBUM PAGE
 
@@ -307,6 +328,8 @@ body {
   margin-top: 1em;
   color: $textWhite;
 
+
+  
   .mainAlbumPage {
     padding-top: 5em;
     padding-bottom: 1.5em;
@@ -341,6 +364,15 @@ body {
     border-radius: 50%;
     font-size: 1.5em;
     color: $textGray;
+
+  }
+  @media screen and(max-width:768px){
+    .iconPlayRandMob{
+      padding-right: 1em;
+      width: 100%;
+      display: flex;
+      justify-content: end;
+    }
   }
 }
 
@@ -364,6 +396,15 @@ body {
     }
   }
 }
+#footmobcenter{
+  span{
+    p{
+      font-size: 0.8em;
+    }
+    
+  }
+}
+
 
 
 

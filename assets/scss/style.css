@@ -20,6 +20,11 @@ body {
 body #side-left {
   background-color: black;
 }
+@media screen and (max-width: 770px) {
+  body #side-left {
+    display: none;
+  }
+}
 body #side-left #icons {
   color: lightgrey;
   border-bottom: 1px solid #3f3f3f;
@@ -58,6 +63,12 @@ body footer {
 }
 
 /* RIGHT SIDEBAR */
+@media screen and (max-width: 991px) {
+  #side-right {
+    display: none !important;
+  }
+}
+
 .controlBar i {
   color: white;
   font-size: 0.7em;
@@ -95,7 +106,15 @@ body footer {
   display: flex;
   justify-content: space-between;
 }
-#center .topBar #dropdown {
+@media screen and (min-width: 576px) {
+  #center .topBar .arrowBack {
+    width: 100vh;
+    display: flex;
+    justify-content: start;
+    color: lightgrey;
+  }
+}
+#center #dropdown {
   background-color: black;
   border-radius: 5em;
   padding: 0 0.3em;
@@ -105,27 +124,27 @@ body footer {
   display: flex;
   align-items: center;
 }
-#center .topBar #dropdown:hover {
+#center #dropdown:hover {
   background-color: #171717;
 }
-#center .topBar #dropdown img {
+#center #dropdown img {
   width: 1.5em;
   height: 1.3em;
 }
-#center .topBar #dropdown .dropdown-menu {
+#center #dropdown .dropdown-menu {
   font-size: 0.8em;
   font-weight: bold;
   background-color: #171717;
   box-shadow: 0px 12px 26px -12px rgba(0, 0, 0, 0.79);
   -webkit-box-shadow: 0px 12px 26px -12px rgba(0, 0, 0, 0.79);
 }
-#center .topBar #dropdown .dropdown-menu li a {
+#center #dropdown .dropdown-menu li a {
   color: white;
 }
-#center .topBar #dropdown .dropdown-menu li a:hover {
+#center #dropdown .dropdown-menu li a:hover {
   color: #171717;
 }
-#center .topBar .arrow {
+#center .arrow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,12 +282,13 @@ body footer {
   box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
   -webkit-box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
 }
-.thirdCard .cardBody h5 {
+
+.cardBody h5 {
   color: white;
   font-weight: bold;
   font-size: 0.9em;
 }
-.thirdCard .cardBody p {
+.cardBody p {
   color: lightgrey;
   font-size: 0.7em;
 }
@@ -313,6 +333,14 @@ body footer {
   font-size: 1.5em;
   color: lightgrey;
 }
+@media screen and (max-width: 768px) {
+  .playerAlbum .iconPlayRandMob {
+    padding-right: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+}
 
 .bodyAlbum {
   padding-top: 3em;
@@ -332,4 +360,8 @@ body footer {
 }
 .bodyAlbum ul span li {
   padding-left: 30em;
+}
+
+#footmobcenter span p {
+  font-size: 0.8em;
 }/*# sourceMappingURL=style.css.map */
