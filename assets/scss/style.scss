@@ -208,503 +208,505 @@ body {
         margin-top: 0.7em;
         font-family: Arial, Helvetica, sans-serif;
       }
-      .bodyCard h1,
-      p {
-        font-family: "Montserrat", sans-serif;
-        font-weight: lighter;
-        padding: 5px;
-      }
-      .buttonCard {
-        padding-top: 0.6em;
-        ul {
-          display: flex;
-          align-items: center;
-          .firstButton {
+      .bodyCard {
+        color: $textWhite;
+        h1,
+        p {
+          font-weight: lighter;
+          padding: 5px;
+        }
+        .buttonCard {
+          padding-top: 0.6em;
+          ul {
             display: flex;
-            border: 1px solid $green;
-            background-color: $green;
-            border-radius: 3em;
-            width: 8em;
-            padding: 0.9em;
-            color: $black;
-          }
-          .secondButton {
-            border: 1px solid $lightgrey;
-            border-radius: 3em;
-            width: 8em;
-            padding: 0.9em;
-          }
-          li {
-            display: flex;
-            justify-content: center;
-            margin: 0 0.5em;
-          }
-          i {
-            margin-left: 0.5em;
-            font-size: 2.5em;
-            color: $lightgrey;
+            align-items: center;
+            .firstButton {
+              display: flex;
+              border: 1px solid $green;
+              background-color: $green;
+              border-radius: 3em;
+              width: 8em;
+              padding: 0.9em;
+              color: $black;
+            }
+            .secondButton {
+              border: 1px solid $lightgrey;
+              border-radius: 3em;
+              width: 8em;
+              padding: 0.9em;
+            }
+            li {
+              display: flex;
+              justify-content: center;
+              margin: 0 0.5em;
+            }
+            i {
+              margin-left: 0.5em;
+              font-size: 2.5em;
+              color: $lightgrey;
+            }
           }
         }
       }
     }
   }
-}
-.annunciHidden {
-  button {
-    margin-top: 0.7em;
-    background-color: $lightgrey;
-    letter-spacing: 1.3px;
-    border-radius: 3em;
-    color: $textGray;
-    font-size: 0.5em;
-    border: none;
-    height: 8%;
-  }
-}
-
-// FINE MAIN CARD
-
-/* SECOND SECTION */
-
-.bottoni {
-  background-color: $grey !important;
-  color: $textGray !important;
-}
-
-#cont {
-  display: flex;
-  flex-wrap: wrap;
-
-  #second-section {
-    @media screen and (max-width: 765px) {
-      background-color: $grey !important;
+  .annunciHidden {
+    button {
+      margin-top: 0.7em;
+      background-color: $lightgrey;
+      letter-spacing: 1.3px;
+      border-radius: 3em;
+      color: $textGray;
+      font-size: 0.5em;
+      border: none;
+      height: 8%;
     }
+  }
+
+  // FINE MAIN CARD
+
+  /* SECOND SECTION */
+
+  .bottoni {
+    background-color: $grey !important;
+    color: $textGray !important;
+  }
+
+  #cont {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: $lightgrey !important;
-    color: $textWhite;
-    margin-bottom: 0.8em;
-    margin-right: 0.5em;
-    width: 17rem;
-    &:hover {
-      background-color: rgb(97, 96, 96) !important;
-    }
-    img {
-      padding-right: 0.5em;
-    }
-  }
-}
+    flex-wrap: wrap;
 
-/* THIRD SECTION */
-
-.leftSection {
-  p {
-    color: $textWhite;
-    font-weight: bold;
-    font-size: 0.9em;
-  }
-}
-
-.rightSection {
-  p {
-    font-size: 0.6em;
-    letter-spacing: 1.3px;
-    color: $textGray;
-    font-weight: bold;
-  }
-}
-
-.thirdCard {
-  height: 250px;
-  background-color: $grey;
-  padding: 0.5em;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin: 0.5em;
-  @media screen and (max-width: 765px) {
-    background-color: $lightgrey;
-    height: 200px;
-  }
-  &:hover {
-    background-color: $cardHover;
-  }
-
-  .img {
-    img {
+    #second-section {
       @media screen and (max-width: 765px) {
-        width: 9em;
-        height: 8em;
+        background-color: $grey !important;
       }
-      width: 8em;
-      height: 7em;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: $lightgrey !important;
+      color: $textWhite;
+      margin-bottom: 0.8em;
+      margin-right: 0.5em;
+      width: 17rem;
+      &:hover {
+        background-color: rgb(97, 96, 96) !important;
+      }
+      img {
+        padding-right: 0.5em;
+      }
     }
-    &:hover {
-      box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
-      -webkit-box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
+  }
+
+  /* THIRD SECTION */
+
+  .leftSection {
+    p {
+      color: $textWhite;
+      font-weight: bold;
+      font-size: 0.9em;
     }
   }
-}
 
-.cardBody {
-  h5 {
-    color: $textWhite;
-    font-weight: bold;
-    font-size: 0.9em;
-  }
-
-  p {
-    color: $textGray;
-    font-size: 0.7em;
-  }
-}
-
-// INIZIO ALBUM PAGE
-
-.boxAlbumPage {
-  display: flex;
-  margin-top: 1em;
-  color: $textWhite;
-
-  .mainAlbumPage {
-    padding-top: 5em;
-    padding-bottom: 1.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    margin-left: 1em;
-    font-size: 0.7em;
-    font-weight: bold;
-    h1 {
-      font-size: 6em;
+  .rightSection {
+    p {
+      font-size: 0.6em;
+      letter-spacing: 1.3px;
+      color: $textGray;
       font-weight: bold;
     }
-    .detailsAlbum {
+  }
+
+  .thirdCard {
+    height: 250px;
+    background-color: $grey;
+    padding: 0.5em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.5em;
+    @media screen and (max-width: 765px) {
+      background-color: $lightgrey;
+      height: 200px;
+    }
+    &:hover {
+      background-color: $cardHover;
+    }
+
+    .img {
+      img {
+        @media screen and (max-width: 765px) {
+          width: 9em;
+          height: 8em;
+        }
+        width: 8em;
+        height: 7em;
+      }
+      &:hover {
+        box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
+        -webkit-box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
+      }
+    }
+  }
+
+  .cardBody {
+    h5 {
+      color: $textWhite;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+
+    p {
+      color: $textGray;
       font-size: 0.7em;
     }
   }
-}
 
-.albumCardFooter {
-  div {
-    i {
-      font-size: 1.5em;
-      color: $textGray;
-    }
-  }
-  p {
-    color: $textGray;
-    font-size: 0.9em;
-  }
-  .palyAlbum {
-    background-color: $grey;
-    height: 30px;
-    width: 30px;
-  }
-}
+  // INIZIO ALBUM PAGE
 
-/* footer2 */
-.footer2 {
-  padding: 1em 0em;
-  color: $textGray;
-  p {
-    font-size: 0.8em;
-  }
-  i {
-    font-size: 1.1em;
-    &:hover {
-      color: $textWhite;
-    }
-  }
-  position: sticky;
-  bottom: 0;
-  background: linear-gradient(180deg, #3b3b3b00 0%, #121212 100%);
-}
-.playerAlbum {
-  padding-top: 1em;
-  border-top: 0.3px solid;
-  display: flex;
-  padding-left: 1em;
-  cursor: pointer;
-  i {
+  .boxAlbumPage {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    font-size: 1.5em;
-    color: $textGray;
-  }
-  @media screen and(max-width:768px) {
-    .iconPlayRandMob {
-      padding-right: 1em;
-      width: 100%;
+    margin-top: 1em;
+    color: $textWhite;
+
+    .mainAlbumPage {
+      padding-top: 5em;
+      padding-bottom: 1.5em;
       display: flex;
+      flex-direction: column;
       justify-content: end;
-    }
-  }
-}
-
-.bodyAlbum {
-  padding-top: 3em;
-  color: $textGray;
-  font-size: 0.5em;
-  ul {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 0.5px solid $lightgrey;
-    padding: 0 2.5em;
-    margin: 2.5em;
-    span {
-      display: flex;
-      padding-right: 10em;
-      li {
-        padding-left: 30em;
+      margin-left: 1em;
+      font-size: 0.7em;
+      font-weight: bold;
+      h1 {
+        font-size: 6em;
+        font-weight: bold;
+      }
+      .detailsAlbum {
+        font-size: 0.7em;
       }
     }
   }
-}
-#footmobcenter {
-  span {
+
+  .albumCardFooter {
+    div {
+      i {
+        font-size: 1.5em;
+        color: $textGray;
+      }
+    }
+    p {
+      color: $textGray;
+      font-size: 0.9em;
+    }
+    .palyAlbum {
+      background-color: $grey;
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  /* footer2 */
+  .footer2 {
+    padding: 1em 0em;
+    color: $textGray;
     p {
       font-size: 0.8em;
     }
-  }
-}
-
-// ARTIST PAGE
-
-#cardOverlay {
-  height: 280px;
-  object-fit: cover;
-}
-
-.arrowMobile {
-  display: none;
-}
-
-.textBox {
-  i {
-    color: #3d91f4;
-    font-size: 1.2em;
-  }
-
-  p {
-    font-size: 0.8em;
-    font-weight: bold;
-  }
-  h5 {
-    font-weight: bold;
-    font-size: 3em;
-  }
-}
-
-.shuffle {
-  display: none;
-}
-
-.circlePlay {
-  width: 50px;
-  height: 50px;
-  background-color: $green;
-  border-radius: 50%;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    cursor: pointer;
-    box-shadow: 0px 0px 24px -6px rgba(29, 235, 102, 0.76);
-    -webkit-box-shadow: 0px 0px 24px -6px rgba(29, 235, 102, 0.76);
-    transform: scale(1.1);
-  }
-
-  i {
-    font-size: 1.8em;
-    color: $black;
-  }
-}
-
-.popolari {
-  font-weight: bold;
-  color: $textWhite;
-  font-size: 1.2em;
-}
-
-.follow {
-  border: none;
-  border: 1px solid white;
-  padding: 0px 20px;
-
-  p {
-    font-size: 0.6em;
-    font-weight: bold;
-    letter-spacing: 1.1px;
-  }
-}
-
-.threeDots {
-  i {
-    color: $textGray;
-    font-size: 1.2em;
-  }
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.left {
-  #smallCover {
-    width: 55px;
-    height: 55px;
-  }
-
-  p {
-    color: $textWhite;
-    font-size: 0.9em;
-  }
-
-  .noneDesktop {
-    display: none;
-  }
-}
-
-.center {
-  p {
-    color: rgb(149, 137, 137);
-    font-size: 0.8em;
-  }
-}
-
-.right {
-  p {
-    color: rgb(149, 137, 137);
-    font-size: 0.8em;
-  }
-
-  i {
-    display: none;
-  }
-}
-
-#imageArtistCircle {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.rightTextImage {
-  .whiteText {
-    color: $textWhite;
-    font-weight: bold;
-    font-size: 0.6em;
-  }
-
-  p {
-    color: rgb(149, 137, 137);
-    font-size: 0.6em;
-  }
-}
-
-.hoverArtist {
-  &:hover {
-    cursor: pointer;
-    background-color: #3f3f3f7d;
-    border-radius: 6px;
-  }
-}
-
-// Inizio responsive mobile artist page
-
-@media screen and (max-width: 770px) {
-  .topBar {
-    display: none !important;
-  }
-
-  .arrowMobile {
-    display: block;
-    background-color: #2e2e2e84;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-
     i {
-      color: $textWhite;
+      font-size: 1.1em;
+      &:hover {
+        color: $textWhite;
+      }
+    }
+    position: sticky;
+    bottom: 0;
+    background: linear-gradient(180deg, #3b3b3b00 0%, #121212 100%);
+  }
+  .playerAlbum {
+    padding-top: 1em;
+    border-top: 0.3px solid;
+    display: flex;
+    padding-left: 1em;
+    cursor: pointer;
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      font-size: 1.5em;
+      color: $textGray;
+    }
+    @media screen and(max-width:768px) {
+      .iconPlayRandMob {
+        padding-right: 1em;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+      }
     }
   }
 
-  h5 {
-    position: relative;
-    top: 95px;
+  .bodyAlbum {
+    padding-top: 3em;
+    color: $textGray;
+    font-size: 0.5em;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 0.5px solid $lightgrey;
+      padding: 0 2.5em;
+      margin: 2.5em;
+      span {
+        display: flex;
+        padding-right: 10em;
+        li {
+          padding-left: 30em;
+        }
+      }
+    }
+  }
+  #footmobcenter {
+    span {
+      p {
+        font-size: 0.8em;
+      }
+    }
   }
 
-  .mobileview {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-  }
-  .reverse {
-    display: flex;
-    flex-direction: column;
+  // ARTIST PAGE
+
+  #cardOverlay {
+    height: 280px;
+    object-fit: cover;
   }
 
-  .popolari {
-    font-size: 1em;
-  }
-
-  .hiddenMobile {
+  .arrowMobile {
     display: none;
   }
 
-  .downMobile {
-    position: relative;
-    top: 48px;
-    font-weight: 400 !important;
+  .textBox {
+    i {
+      color: #3d91f4;
+      font-size: 1.2em;
+    }
+
+    p {
+      font-size: 0.8em;
+      font-weight: bold;
+    }
+    h5 {
+      font-weight: bold;
+      font-size: 3em;
+    }
   }
 
-  .reverseMobileIcon {
-    display: flex;
-    justify-content: space-between;
+  .shuffle {
+    display: none;
+  }
+
+  .circlePlay {
+    width: 50px;
+    height: 50px;
+    background-color: $green;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 24px -6px rgba(29, 235, 102, 0.76);
+      -webkit-box-shadow: 0px 0px 24px -6px rgba(29, 235, 102, 0.76);
+      transform: scale(1.1);
+    }
+
+    i {
+      font-size: 1.8em;
+      color: $black;
+    }
+  }
+
+  .popolari {
+    font-weight: bold;
+    color: $textWhite;
+    font-size: 1.2em;
   }
 
   .follow {
     border: none;
     border: 1px solid white;
-    border-radius: 30px;
-    padding: 0px 5px;
+    padding: 0px 20px;
+
+    p {
+      font-size: 0.6em;
+      font-weight: bold;
+      letter-spacing: 1.1px;
+    }
   }
 
-  .shuffle {
-    display: block;
-    color: $textGray;
-    font-size: 1.6em;
+  .threeDots {
+    i {
+      color: $textGray;
+      font-size: 1.2em;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
-  .noneDesktop {
-    display: block !important;
+  .left {
+    #smallCover {
+      width: 55px;
+      height: 55px;
+    }
+
+    p {
+      color: $textWhite;
+      font-size: 0.9em;
+    }
+
+    .noneDesktop {
+      display: none;
+    }
   }
 
   .center {
-    display: none;
+    p {
+      color: rgb(149, 137, 137);
+      font-size: 0.8em;
+    }
   }
 
   .right {
     p {
-      display: none;
+      color: rgb(149, 137, 137);
+      font-size: 0.8em;
     }
 
     i {
-      display: block;
-      color: rgb(236, 236, 236);
-      font-size: 1.3em;
+      display: none;
+    }
+  }
+
+  #imageArtistCircle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    &:hover {
+      cursor: pointer;
     }
   }
 
   .rightTextImage {
-    font-size: 1.3em;
+    .whiteText {
+      color: $textWhite;
+      font-weight: bold;
+      font-size: 0.6em;
+    }
+
+    p {
+      color: rgb(149, 137, 137);
+      font-size: 0.6em;
+    }
+  }
+
+  .hoverArtist {
+    &:hover {
+      cursor: pointer;
+      background-color: #3f3f3f7d;
+      border-radius: 6px;
+    }
+  }
+
+  // Inizio responsive mobile artist page
+
+  @media screen and (max-width: 770px) {
+    .topBar {
+      display: none !important;
+    }
+
+    .arrowMobile {
+      display: block;
+      background-color: #2e2e2e84;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+
+      i {
+        color: $textWhite;
+      }
+    }
+
+    h5 {
+      position: relative;
+      top: 95px;
+    }
+
+    .mobileview {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+    .reverse {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .popolari {
+      font-size: 1em;
+    }
+
+    .hiddenMobile {
+      display: none;
+    }
+
+    .downMobile {
+      position: relative;
+      top: 48px;
+      font-weight: 400 !important;
+    }
+
+    .reverseMobileIcon {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .follow {
+      border: none;
+      border: 1px solid white;
+      border-radius: 30px;
+      padding: 0px 5px;
+    }
+
+    .shuffle {
+      display: block;
+      color: $textGray;
+      font-size: 1.6em;
+    }
+
+    .noneDesktop {
+      display: block !important;
+    }
+
+    .center {
+      display: none;
+    }
+
+    .right {
+      p {
+        display: none;
+      }
+
+      i {
+        display: block;
+        color: rgb(236, 236, 236);
+        font-size: 1.3em;
+      }
+    }
+
+    .rightTextImage {
+      font-size: 1.3em;
+    }
   }
 }

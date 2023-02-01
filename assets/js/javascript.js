@@ -14,8 +14,8 @@ const mainSong = async () => {
   <div class="mainAlbum">
     <p>${favSong.album.title}</p>
     <div class="bodyCard">
-        <h1>${favSong.title}</h1>
-        <p>${favSong.artist.name}</p>
+        <a class="text-decoration-none text-light" id="album" href="../../Album.html"><h1>${favSong.title}</h1></a>
+        <a class="text-decoration-none text-light" id="artist" href="../../artist-page.html"><p>${favSong.artist.name}</p></a>
         <p>Ascolta il nuovo singolo di</p>
         <div class="buttonCard">
             <ul>
@@ -31,9 +31,13 @@ const mainSong = async () => {
   let idAlbum = favSong.album.id;
   console.log("idArtist", idArtist);
   console.log("idAlbum", idAlbum);
-
   return idArtist, idAlbum;
 };
+
+let album = document.getElementById("album");
+album.addEventListener("click", () => {
+  return window.location.assign(`../../Album.html?album=${idAlbum}`);
+});
 
 /* FIRST SECTION */
 const nascondi = () => {
