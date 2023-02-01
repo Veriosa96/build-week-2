@@ -280,6 +280,7 @@ body footer {
   background-color: rgb(97, 96, 96) !important;
 }
 #cont #second-section img {
+  height: 100%;
   padding-right: 0.5em;
 }
 
