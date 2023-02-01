@@ -43,7 +43,7 @@ bottone.addEventListener("click", () => {
 
 /* SECOND SECTION */
 const secondSection = async () => {
-  let canzoni = await fetchSongs("track");
+  let canzoni = await fetchSongs("song");
   let second = document.getElementById("second");
   let favSongs = [
     canzoni[6],

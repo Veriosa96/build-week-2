@@ -257,6 +257,8 @@ body footer {
   background-color: #3f3f3f !important;
   color: white;
   margin-bottom: 0.8em;
+  margin-right: 0.5em;
+  width: 17rem;
 }
 @media screen and (max-width: 765px) {
   #cont #second-section {
