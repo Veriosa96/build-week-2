@@ -41,6 +41,11 @@ body {
       li {
         font-size: 0.7em;
         color: $textGray;
+        &:hover {
+          cursor: pointer;
+          color: $textWhite;
+          font-weight: bold;
+        }
       }
     }
   }

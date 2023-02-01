@@ -56,6 +56,11 @@ body #side-left #playlist li {
   font-size: 0.7em;
   color: lightgrey;
 }
+body #side-left #playlist li:hover {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
 @media screen and (min-width: 766px) {
   body #center {
     background: linear-gradient(180deg, #303030 0%, #121212 100%);
