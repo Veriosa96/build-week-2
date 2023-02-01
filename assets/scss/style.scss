@@ -37,6 +37,12 @@ body {
         }
       }
     }
+    #playlist {
+      li {
+        font-size: 0.7em;
+        color: $textGray;
+      }
+    }
   }
   #center {
     @media screen and (min-width: 766px) {
@@ -311,6 +317,7 @@ body {
   margin: 0.5em;
   @media screen and (max-width: 765px) {
     background-color: $lightgrey;
+    height: 200px;
   }
   &:hover {
     background-color: $cardHover;
@@ -318,27 +325,30 @@ body {
 
   .img {
     img {
+      @media screen and (max-width: 765px) {
+        width: 9em;
+        height: 8em;
+      }
       width: 8em;
       height: 7em;
     }
-      &:hover {
-        box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
-        -webkit-box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
-      }
+    &:hover {
+      box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
+      -webkit-box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
     }
   }
+}
 
-  .cardBody {
-    h5 {
-      color: $textWhite;
-      font-weight: bold;
-      font-size: 0.9em;
-    }
+.cardBody {
+  h5 {
+    color: $textWhite;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
 
-    p {
-      color: $textGray;
-      font-size: 0.7em;
-    }
+  p {
+    color: $textGray;
+    font-size: 0.7em;
   }
 }
 
