@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./assets/scss/style.css" />
   <title>Document</title>
 </head>
+
 <body>
   <div class="container-fluid">
     <div class="row">
@@ -46,15 +47,14 @@
         </div>
       </div>
       <div class="col-12 col-md-9 col-lg-7 p-0" id="center">
-        <div class="topBar px-3 py-2">
-          <div class="arrowBack d-lg-none "><i class="bi bi-arrow-left"></i></div>
-          <div class="d-flex d-sm-none d-lg-inline-flex">  
+        <div class="topBar1 px-3 py-2 d-none d-md-flex justify-content-between">
+          <div class="d-flex">
             <div class="arrow"><i class="bi bi-chevron-left"></i></div>
             <div class="arrow"><i class="bi bi-chevron-right"></i></div>
           </div>
-          <div id="dropdown d-none d-md-flex">
-            <a class="nav-link dropdown-toggle d-none d-md-flex" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <img class="d-none d-md-flex"
+          <div id="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img
                 src="./assets/image/kisspng-computer-icons-clip-art-three-people-5b2d808212f1b8.4963498515297086740776.png"
                 alt="" />
               Account
@@ -74,47 +74,58 @@
         <!-- INIZIO ALBUM PAGE -->
         <div class="container boxAlbumPage ">
           <div class="row d-flex " id="headAlbumPage">
-            <div class="col d-lg-flex ">           
-              <div class="imgAlbum d-flex justify-content-center">immagine</div>
+            <div class="col d-lg-flex ">
+              <div class="d-flex">
+                <div class="arrowBack d-lg-none "><i class="bi bi-arrow-left"></i></div>
+                <div class="imgAlbum d-flex justify-content-center">immagine</div>
+              </div>
+
               <div id="dataAlbum">
               </div>
-            <div class="mainAlbumPage">
-              <p class="d-sm-none d-md-inline">Album</p>
-              <h1 class="text-start">album title</h1>
-              <p class="detailsAlbum d-sm-none d-lg-inline"><img class="miniImgAlbum" src="" alt="">Artista • Anno Pubblicazione • N. brani dell'album, durata dell'album</p>
-              <p class="d-sm-inline d-md-inline d-lg-none">Album • Anno</p>
+              <div class="mainAlbumPage">
+                <p class="d-sm-none d-md-inline">Album</p>
+                <h1 class="text-start">album title</h1>
+                <p class="detailsAlbum d-sm-none d-lg-inline"><img class="miniImgAlbum" src="" alt="">Artista • Anno
+                  Pubblicazione • N. brani dell'album, durata dell'album</p>
+                <p class="d-sm-inline d-md-inline d-lg-none">Album • Anno</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      
-      <div class="playerAlbum">
-            <i class="bi bi-play-fill bg-success text-dark d-sm-none d-lg-inline-flex" ></i>
-            <i class="bi bi-heart ps-4"></i>
-            <i class="bi bi-arrow-down-circle ps-4"></i>
-            <i class="bi bi-three-dots d-sm-none d-lg-inline-flex ps-4"></i>
-            <i class="bi bi-three-dots-vertical d-lg-none ps-4"></i>
-            <div class="iconPlayRandMob ">
+
+        <div class="playerAlbum">
+          <i class="bi bi-play-fill bg-success text-dark d-sm-none d-lg-inline-flex"></i>
+          <i class="bi bi-heart ps-4"></i>
+          <i class="bi bi-arrow-down-circle ps-4"></i>
+          <i class="bi bi-three-dots d-sm-none d-lg-inline-flex ps-4"></i>
+          <i class="bi bi-three-dots-vertical d-lg-none ps-4"></i>
+          <div class="iconPlayRandMob ">
             <i class="bi bi-shuffle d-lg-none"></i>
             <i class="bi bi-play-fill bg-success text-dark d-md-none ms-2"></i>
           </div>
 
-          </div>
-          <div class="bodyAlbum">
-            <ul>
-              <li class="firstColoumn d-sm-none d-md-inline-flex"># TITOLO</li>
-              <span class="d-sm-none d-md-inline-flex">
+        </div>
+        <div class="bodyAlbum">
+          <ul>
+            <li class="firstColoumn d-sm-none d-md-inline-flex"># TITOLO</li>
+            <span class="d-sm-none d-md-inline-flex">
               <li>RIPRODUZIONI</li>
               <li><i class="bi bi-clock"></i></li>
             </span>
-            </ul>
-            </div>
-            <div class="d-lg-none text-secondary-emphasis d-flex justify-content-evenly" id="footmobcenter">
-              <span class="d-flex flex-column align-items-center"><i class="bi bi-house-door-fill"></i><p>Home</p></span>
-              <span class="d-flex flex-column align-items-center"><i class="bi bi-search"></i><p>Cerca</p></span>
-              <span class="d-flex flex-column align-items-center"><i class="bi bi-music-note-list"></i><p>La tua libreria</p></span>
-            </div>
-    </div>
+          </ul>
+        </div>
+        <div class="d-lg-none text-secondary-emphasis d-flex justify-content-evenly" id="footmobcenter">
+          <span class="d-flex flex-column align-items-center"><i class="bi bi-house-door-fill"></i>
+            <p>Home</p>
+          </span>
+          <span class="d-flex flex-column align-items-center"><i class="bi bi-search"></i>
+            <p>Cerca</p>
+          </span>
+          <span class="d-flex flex-column align-items-center"><i class="bi bi-music-note-list"></i>
+            <p>La tua libreria</p>
+          </span>
+        </div>
+      </div>
       <!--SIDE RIGHT-->
 
       <div class="col-lg-2 d-flex flex-column" id="side-right">
@@ -178,9 +189,9 @@
         </div>
       </div>
     </div>
-  
-  <footer>Music Bar</footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+
+    <footer>Music Bar</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
 </body>

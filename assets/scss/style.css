@@ -199,20 +199,14 @@ body footer {
   margin-top: 0.7em;
   font-family: Arial, Helvetica, sans-serif;
 }
-.box #mainCard #dataTrack .bodyCard h1,
-.box #mainCard #dataTrack p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: lighter;
-  padding: 5px;
-}
-.box #mainCard #dataTrack .buttonCard {
+.box #mainCard #dataTrack .bodyCard .buttonCard {
   padding-top: 0.6em;
 }
-.box #mainCard #dataTrack .buttonCard ul {
+.box #mainCard #dataTrack .bodyCard .buttonCard ul {
   display: flex;
   align-items: center;
 }
-.box #mainCard #dataTrack .buttonCard ul .firstButton {
+.box #mainCard #dataTrack .bodyCard .buttonCard ul .firstButton {
   display: flex;
   border: 1px solid #1db954;
   background-color: #1db954;
@@ -221,21 +215,29 @@ body footer {
   padding: 0.9em;
   color: black;
 }
-.box #mainCard #dataTrack .buttonCard ul .secondButton {
+.box #mainCard #dataTrack .bodyCard .buttonCard ul .secondButton {
   border: 1px solid #3f3f3f;
   border-radius: 3em;
   width: 8em;
   padding: 0.9em;
 }
-.box #mainCard #dataTrack .buttonCard ul li {
+.box #mainCard #dataTrack .bodyCard .buttonCard ul li {
   display: flex;
   justify-content: center;
   margin: 0 0.5em;
 }
-.box #mainCard #dataTrack .buttonCard ul i {
+.box #mainCard #dataTrack .bodyCard .buttonCard ul i {
   margin-left: 0.5em;
   font-size: 2.5em;
   color: #3f3f3f;
+}
+.box #mainCard #dataTrack p {
+  font-weight: lighter;
+  padding: 5px;
+}
+.box #mainCard #dataTrack a {
+  color: white;
+  text-decoration: none;
 }
 
 .annunciHidden button {

@@ -208,43 +208,47 @@ body {
         margin-top: 0.7em;
         font-family: Arial, Helvetica, sans-serif;
       }
-      .bodyCard h1,
+      .bodyCard {
+        .buttonCard {
+          padding-top: 0.6em;
+          ul {
+            display: flex;
+            align-items: center;
+            .firstButton {
+              display: flex;
+              border: 1px solid $green;
+              background-color: $green;
+              border-radius: 3em;
+              width: 8em;
+              padding: 0.9em;
+              color: $black;
+            }
+            .secondButton {
+              border: 1px solid $lightgrey;
+              border-radius: 3em;
+              width: 8em;
+              padding: 0.9em;
+            }
+            li {
+              display: flex;
+              justify-content: center;
+              margin: 0 0.5em;
+            }
+            i {
+              margin-left: 0.5em;
+              font-size: 2.5em;
+              color: $lightgrey;
+            }
+          }
+        }
+      }
       p {
-        font-family: "Montserrat", sans-serif;
         font-weight: lighter;
         padding: 5px;
       }
-      .buttonCard {
-        padding-top: 0.6em;
-        ul {
-          display: flex;
-          align-items: center;
-          .firstButton {
-            display: flex;
-            border: 1px solid $green;
-            background-color: $green;
-            border-radius: 3em;
-            width: 8em;
-            padding: 0.9em;
-            color: $black;
-          }
-          .secondButton {
-            border: 1px solid $lightgrey;
-            border-radius: 3em;
-            width: 8em;
-            padding: 0.9em;
-          }
-          li {
-            display: flex;
-            justify-content: center;
-            margin: 0 0.5em;
-          }
-          i {
-            margin-left: 0.5em;
-            font-size: 2.5em;
-            color: $lightgrey;
-          }
-        }
+      a {
+        color: $textWhite;
+        text-decoration: none;
       }
     }
   }
