@@ -1,250 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/scss/style.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./assets/scss/style.css" />
-  <title>Document</title>
-</head>
-
-<body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-3 ps-4" id="side-left">
-        <div id="icons">
-          <div class="d-flex flex-column pb-3">
-            <i class="bi bi-three-dots"></i>
-            <span><i class="bi bi-house-door-fill"></i>
-              <p>Home</p>
-            </span>
-            <span><i class="bi bi-search"></i>
-              <p>Cerca</p>
-            </span>
-            <span><i class="bi bi-music-note-list"></i>
-              <p>La tua libreria</p>
-            </span>
-          </div>
-          <div class="d-flex flex-column">
-            <span><i class="bi bi-plus-square-fill"></i>
-              <p>Crea playlist</p>
-            </span>
-            <span><img src="./assets/image/heart.png" />
-              <p>Brani che ti piacciono</p>
-            </span>
-            <span><i class="bi bi-bookmark-fill"></i>
-              <p>I tuoi episodi</p>
-            </span>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 ps-4" id="side-left">
+          <div id="icons">
+            <div class="d-flex flex-column pb-3">
+              <i class="bi bi-three-dots"></i>
+              <span
+                ><i class="bi bi-house-door-fill"></i>
+                <p>Home</p>
+              </span>
+              <span
+                ><i class="bi bi-search"></i>
+                <p>Cerca</p>
+              </span>
+              <span
+                ><i class="bi bi-music-note-list"></i>
+                <p>La tua libreria</p>
+              </span>
+            </div>
+            <div class="d-flex flex-column">
+              <span
+                ><i class="bi bi-plus-square-fill"></i>
+                <p>Crea playlist</p>
+              </span>
+              <span
+                ><img src="./assets/image/heart.png" />
+                <p>Brani che ti piacciono</p>
+              </span>
+              <span
+                ><i class="bi bi-bookmark-fill"></i>
+                <p>I tuoi episodi</p>
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-md-9 col-lg-7 p-0" id="center">
-        <div class="topBar1 px-3 py-2  d-none d-md-flex justify-content-between">
-          <div class="d-flex">
-            <div class="arrow"><i class="bi bi-chevron-left"></i></div>
-            <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+        <div class="col-12 col-md-9 col-lg-7 p-0" id="center">
+          <div class="topBar px-3 py-2">
+            <div class="d-flex">
+              <div class="arrow"><i class="bi bi-chevron-left"></i></div>
+              <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+            </div>
+            <div id="dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/image/kisspng-computer-icons-clip-art-three-people-5b2d808212f1b8.4963498515297086740776.png"
+                  alt=""
+                />
+                Account
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Adina Iamandi</a></li>
+                <li><a class="dropdown-item" href="#">Sara Di Luca</a></li>
+                <li><a class="dropdown-item" href="#">Marco Sorrentino</a></li>
+                <li><a class="dropdown-item" href="#">Saverio Caracappa</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#"></a></li>
+              </ul>
+            </div>
           </div>
-          <div id="dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <img
-                src="./assets/image/kisspng-computer-icons-clip-art-three-people-5b2d808212f1b8.4963498515297086740776.png"
-                alt="" />
-              Account
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Adina Iamandi</a></li>
-              <li><a class="dropdown-item" href="#">Sara Di Luca</a></li>
-              <li><a class="dropdown-item" href="#">Marco Sorrentino</a></li>
-              <li><a class="dropdown-item" href="#">Saverio Caracappa</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li><a class="dropdown-item" href="#"></a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- INIZIO ARTIST PAGE -->
+          <!-- INIZIO ARTIST PAGE -->
 
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col p-0">
-              <div class="card border-0 text-bg-dark p-0">
-                <img id="cardOverlay"
-                  src="https://www.rollingstone.it/wp-content/uploads/2021/10/coldplay-foto-press.jpg"
-                  class="card-img rounded-0" alt="..." />
-                <div class="card-img-overlay d-flex flex-column justify-content-between justify-content-md-end textBox">
-                  <div class="arrow arrowMobile d-flex justify-content-center align-items-center">
-                    <i class="bi bi-chevron-left"></i>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col p-0">
+                <div class="card border-0 text-bg-dark p-0">
+                  <img
+                    id="cardOverlay"
+                    src="https://www.rollingstone.it/wp-content/uploads/2021/10/coldplay-foto-press.jpg"
+                    class="card-img rounded-0"
+                    alt="..."
+                  />
+                  <div
+                    class="card-img-overlay d-flex flex-column justify-content-between justify-content-md-end textBox"
+                  >
+                    <div
+                      class="arrow arrowMobile d-flex justify-content-center align-items-center"
+                    >
+                      <i class="bi bi-chevron-left"></i>
+                    </div>
+                    <p class="hiddenMobile">
+                      <i class="bi bi-patch-check-fill me-2 hiddenMobile"></i
+                      ><small>Artista verificato</small>
+                    </p>
+                    <h5 class="card-title">Yellowcard</h5>
+                    <p class="card-text downMobile">
+                      <small>3.433.168 ascoltatori mensili</small>
+                    </p>
                   </div>
-                  <p class="hiddenMobile">
-                    <i class="bi bi-patch-check-fill me-2 hiddenMobile"></i><small>Artista verificato</small>
-                  </p>
-                  <h5 class="card-title">Yellowcard</h5>
-                  <p class="card-text downMobile">
-                    <small>3.433.168 ascoltatori mensili</small>
-                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="container mt-5 mt-lg-4">
-          <div class="row">
-            <div class="col d-flex align-items-center mobileview">
-              <div class="d-flex align-items-center">
-                <i class="bi bi-shuffle shuffle me-4"></i>
-                <div class="circlePlay d-flex justify-content-center align-items-center me-1 me-md-4">
-                  <i class="bi bi-play-fill"></i>
+          <div class="container mt-5 mt-lg-4">
+            <div class="row">
+              <div class="col d-flex align-items-center mobileview">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-shuffle shuffle me-4"></i>
+                  <div
+                    class="circlePlay d-flex justify-content-center align-items-center me-1 me-md-4"
+                  >
+                    <i class="bi bi-play-fill"></i>
+                  </div>
                 </div>
-              </div>
 
-              <div class="threeDots">
-                <button type="button" class="btn btn-outline-light follow me-4">
-                  <p class="p-1 buttonFollowMobile">FOLLOWING</p>
-                </button>
-                <i class="bi bi-three-dots"></i>
+                <div class="threeDots">
+                  <button
+                    type="button"
+                    class="btn btn-outline-light follow me-4"
+                  >
+                    <p class="p-1 buttonFollowMobile">FOLLOWING</p>
+                  </button>
+                  <i class="bi bi-three-dots"></i>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!--START SECOND CONTAINER-->
+          <!--START SECOND CONTAINER-->
 
-        <div class="container mt-4 mt-lg-3">
-          <div class="row reverse">
-            <div class="col">
-              <p class="popolari">Popolari</p>
-              <div class="container">
-                <!--START SONG'S ROW TO COPY FOR JS FUNCTIONS-->
+          <div class="container mt-4 mt-lg-3">
+            <div class="row reverse">
+              <div class="col">
+                <p class="popolari">Popolari</p>
+                <div class="container">
+                  <!--START SONG'S ROW TO COPY FOR JS FUNCTIONS-->
 
-                <div class="row mt-3">
-                  <div class="col d-flex justify-content-between align-items-center hoverArtist">
-                    <div class="left d-flex align-items-center">
-                      <p class="me-3">1</p>
-                      <img id="smallCover" src="https://i.ebayimg.com/images/g/KlMAAOSwf6Fci6rC/s-l500.jpg" alt=""
-                        class="me-3" />
-                      <div>
-                        <p class="noneMobile albumName">nome album</p>
-                        <p class="noneDesktop">276.968.994</p>
+                  <div class="row mt-3">
+                    <div
+                      class="col d-flex justify-content-between align-items-center hoverArtist"
+                    >
+                      <div class="left d-flex align-items-center">
+                        <p class="me-3">1</p>
+                        <img
+                          id="smallCover"
+                          src="https://i.ebayimg.com/images/g/KlMAAOSwf6Fci6rC/s-l500.jpg"
+                          alt=""
+                          class="me-3"
+                        />
+                        <div>
+                          <p class="noneMobile albumName">nome album</p>
+                          <p class="noneDesktop">276.968.994</p>
+                        </div>
+                      </div>
+                      <div class="center">
+                        <p>276.968.994</p>
+                      </div>
+                      <div class="right">
+                        <p class="">3:18</p>
+                        <i class="bi bi-three-dots"></i>
                       </div>
                     </div>
-                    <div class="center">
-                      <p>276.968.994</p>
-                    </div>
-                    <div class="right">
-                      <p class="">3:18</p>
-                      <i class="bi bi-three-dots"></i>
-                    </div>
                   </div>
+
+                  <!--FINISH SONG'S ROW-->
                 </div>
-
-                <!--FINISH SONG'S ROW-->
-              </div>
-            </div>
-
-            <!--Center's right section-->
-
-            <div class="col-12 col-md-4 mt-5 mt-lg-0">
-              <div class="row popolari">
-                <p>Brani che ti piacciono</p>
               </div>
 
-              <div class="row">
-                <div class="col d-flex align-items-center mt-3">
-                  <div class="imageArtist">
-                    <img id="imageArtistCircle"
-                      src="https://www.nme.com/wp-content/uploads/2021/10/nme-cover-2021-coldplay-cover@1990x2488.jpg"
-                      alt="" />
-                  </div>
-                  <div class="rightTextImage ms-3">
-                    <p class="whiteText">Hai messo Mi piace a 11 brani</p>
-                    <p>di Yellowcard</p>
+              <!--Center's right section-->
+
+              <div class="col-12 col-md-4 mt-5 mt-lg-0">
+                <div class="row popolari"><p>Brani che ti piacciono</p></div>
+
+                <div class="row">
+                  <div class="col d-flex align-items-center mt-3">
+                    <div class="imageArtist">
+                      <img
+                        id="imageArtistCircle"
+                        src="https://www.nme.com/wp-content/uploads/2021/10/nme-cover-2021-coldplay-cover@1990x2488.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="rightTextImage ms-3">
+                      <p class="whiteText">Hai messo Mi piace a 11 brani</p>
+                      <p>di Yellowcard</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!--SIDE RIGHT-->
+        <!--SIDE RIGHT-->
 
-      <div class="col-lg-2 d-flex flex-column" id="side-right">
-        <div class="controlBar d-flex justify-content-end mt-1">
-          <i class="bi bi-dash-lg"></i>
-          <i class="bi bi-back ms-4"></i>
-          <i class="bi bi-x-lg ms-4 me-2"></i>
-        </div>
-        <div class="rightColumn pt-3 d-flex justify-content-between">
-          <p>Attività amici</p>
-          <div class="rightIcons pe-2">
-            <i class="bi bi-person-add pe-1"></i>
-            <i class="bi bi-x-lg"></i>
+        <div class="col-lg-2 d-flex flex-column" id="side-right">
+          <div class="controlBar d-flex justify-content-end mt-1">
+            <i class="bi bi-dash-lg"></i>
+            <i class="bi bi-back ms-4"></i>
+            <i class="bi bi-x-lg ms-4 me-2"></i>
           </div>
-        </div>
-        <div class="avatars d-flex justify-content-between pt-4">
-          <div class="leftImage d-flex">
-            <img id="avatarCircle" src="./assets/image/avatar1.png" alt="avatar1" />
-            <div class="d-flex flex-column ms-2">
-              <p class="boldName">Charlie Hookham</p>
-              <p class="mt-1">In Camera • Yumi Zouma</p>
-              <p class="mt-1"><i class="bi bi-record-circle"></i> EP III</p>
+          <div class="rightColumn pt-3 d-flex justify-content-between">
+            <p>Attività amici</p>
+            <div class="rightIcons pe-2">
+              <i class="bi bi-person-add pe-1"></i>
+              <i class="bi bi-x-lg"></i>
             </div>
           </div>
-
-          <p class="me-2 hours">4 ore</p>
-        </div>
-
-        <!--AVATAR 2-->
-
-        <div class="avatars d-flex justify-content-between pt-4">
-          <div class="leftImage d-flex">
-            <img id="avatarCircle" src="./assets/image/avatar2.jpg" alt="avatar1" />
-            <div class="d-flex flex-column ms-2">
-              <p class="boldName">lightdark02</p>
-              <p class="mt-1">Aimed to Kill • Jade LeMac</p>
-              <p class="mt-1">
-                <i class="bi bi-record-circle"></i> Aimed to Kill
-              </p>
+          <div class="avatars d-flex justify-content-between pt-4">
+            <div class="leftImage d-flex">
+              <img
+                id="avatarCircle"
+                src="./assets/image/avatar1.png"
+                alt="avatar1"
+              />
+              <div class="d-flex flex-column ms-2">
+                <p class="boldName">Charlie Hookham</p>
+                <p class="mt-1">In Camera • Yumi Zouma</p>
+                <p class="mt-1"><i class="bi bi-record-circle"></i> EP III</p>
+              </div>
             </div>
+
+            <p class="me-2 hours">4 ore</p>
           </div>
 
-          <p class="me-2 hours">8 ore</p>
-        </div>
+          <!--AVATAR 2-->
 
-        <!--AVATAR 3-->
-
-        <div class="avatars d-flex justify-content-between pt-4">
-          <div class="leftImage d-flex">
-            <img id="avatarCircle" src="./assets/image/avatr3.png" alt="avatar1" />
-            <div class="d-flex flex-column ms-2">
-              <p class="boldName">Valeria Traverso</p>
-              <p class="mt-1">New Kings • Sleeping Wolf</p>
-              <p class="mt-1">
-                <i class="bi bi-music-note-beamed"></i> Twist Badass mood
-              </p>
+          <div class="avatars d-flex justify-content-between pt-4">
+            <div class="leftImage d-flex">
+              <img
+                id="avatarCircle"
+                src="./assets/image/avatar2.jpg"
+                alt="avatar1"
+              />
+              <div class="d-flex flex-column ms-2">
+                <p class="boldName">lightdark02</p>
+                <p class="mt-1">Aimed to Kill • Jade LeMac</p>
+                <p class="mt-1">
+                  <i class="bi bi-record-circle"></i> Aimed to Kill
+                </p>
+              </div>
             </div>
+
+            <p class="me-2 hours">8 ore</p>
           </div>
 
-          <p class="me-2 hours">3 giorni</p>
+          <!--AVATAR 3-->
+
+          <div class="avatars d-flex justify-content-between pt-4">
+            <div class="leftImage d-flex">
+              <img
+                id="avatarCircle"
+                src="./assets/image/avatr3.png"
+                alt="avatar1"
+              />
+              <div class="d-flex flex-column ms-2">
+                <p class="boldName">Valeria Traverso</p>
+                <p class="mt-1">New Kings • Sleeping Wolf</p>
+                <p class="mt-1">
+                  <i class="bi bi-music-note-beamed"></i> Twist Badass mood
+                </p>
+              </div>
+            </div>
+
+            <p class="me-2 hours">3 giorni</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <footer>Music Bar</footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-  <script src="./assets/js/artis.js"></script>
-</body>
-
+    <footer>Music Bar</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

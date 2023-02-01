@@ -182,9 +182,6 @@ body footer {
   -webkit-backdrop-filter: blur(29px);
           backdrop-filter: blur(29px);
   margin-top: 0.5em;
-  /* SECOND SECTION */
-  /* THIRD SECTION */
-  /* footer2 */
 }
 @media screen and (max-width: 770px) {
   .box {
@@ -202,22 +199,20 @@ body footer {
   margin-top: 0.7em;
   font-family: Arial, Helvetica, sans-serif;
 }
-.box #mainCard #dataTrack .bodyCard {
-  color: white;
-}
 .box #mainCard #dataTrack .bodyCard h1,
-.box #mainCard #dataTrack .bodyCard p {
+.box #mainCard #dataTrack p {
+  font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   padding: 5px;
 }
-.box #mainCard #dataTrack .bodyCard .buttonCard {
+.box #mainCard #dataTrack .buttonCard {
   padding-top: 0.6em;
 }
-.box #mainCard #dataTrack .bodyCard .buttonCard ul {
+.box #mainCard #dataTrack .buttonCard ul {
   display: flex;
   align-items: center;
 }
-.box #mainCard #dataTrack .bodyCard .buttonCard ul .firstButton {
+.box #mainCard #dataTrack .buttonCard ul .firstButton {
   display: flex;
   border: 1px solid #1db954;
   background-color: #1db954;
@@ -226,23 +221,24 @@ body footer {
   padding: 0.9em;
   color: black;
 }
-.box #mainCard #dataTrack .bodyCard .buttonCard ul .secondButton {
+.box #mainCard #dataTrack .buttonCard ul .secondButton {
   border: 1px solid #3f3f3f;
   border-radius: 3em;
   width: 8em;
   padding: 0.9em;
 }
-.box #mainCard #dataTrack .bodyCard .buttonCard ul li {
+.box #mainCard #dataTrack .buttonCard ul li {
   display: flex;
   justify-content: center;
   margin: 0 0.5em;
 }
-.box #mainCard #dataTrack .bodyCard .buttonCard ul i {
+.box #mainCard #dataTrack .buttonCard ul i {
   margin-left: 0.5em;
   font-size: 2.5em;
   color: #3f3f3f;
 }
-.box .annunciHidden button {
+
+.annunciHidden button {
   margin-top: 0.7em;
   background-color: #3f3f3f;
   letter-spacing: 1.3px;
@@ -252,15 +248,18 @@ body footer {
   border: none;
   height: 8%;
 }
-.box .bottoni {
+
+/* SECOND SECTION */
+.bottoni {
   background-color: #171717 !important;
   color: lightgrey !important;
 }
-.box #cont {
+
+#cont {
   display: flex;
   flex-wrap: wrap;
 }
-.box #cont #second-section {
+#cont #second-section {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -271,28 +270,32 @@ body footer {
   width: 17rem;
 }
 @media screen and (max-width: 765px) {
-  .box #cont #second-section {
+  #cont #second-section {
     background-color: #171717 !important;
   }
 }
-.box #cont #second-section:hover {
+#cont #second-section:hover {
   background-color: rgb(97, 96, 96) !important;
 }
-.box #cont #second-section img {
+#cont #second-section img {
   padding-right: 0.5em;
 }
-.box .leftSection p {
+
+/* THIRD SECTION */
+.leftSection p {
   color: white;
   font-weight: bold;
   font-size: 0.9em;
 }
-.box .rightSection p {
+
+.rightSection p {
   font-size: 0.6em;
   letter-spacing: 1.3px;
   color: lightgrey;
   font-weight: bold;
 }
-.box .thirdCard {
+
+.thirdCard {
   height: 250px;
   background-color: #171717;
   padding: 0.5em;
@@ -301,43 +304,45 @@ body footer {
   margin: 0.5em;
 }
 @media screen and (max-width: 765px) {
-  .box .thirdCard {
+  .thirdCard {
     background-color: #3f3f3f;
     height: 200px;
   }
 }
-.box .thirdCard:hover {
+.thirdCard:hover {
   background-color: #323232;
 }
-.box .thirdCard .img img {
+.thirdCard .img img {
   width: 8em;
   height: 7em;
 }
 @media screen and (max-width: 765px) {
-  .box .thirdCard .img img {
+  .thirdCard .img img {
     width: 9em;
     height: 8em;
   }
 }
-.box .thirdCard .img:hover {
+.thirdCard .img:hover {
   box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
   -webkit-box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
 }
-.box .cardBody h5 {
+
+.cardBody h5 {
   color: white;
   font-weight: bold;
   font-size: 0.9em;
 }
-.box .cardBody p {
+.cardBody p {
   color: lightgrey;
   font-size: 0.7em;
 }
-.box .boxAlbumPage {
+
+.boxAlbumPage {
   display: flex;
   margin-top: 1em;
   color: white;
 }
-.box .boxAlbumPage .mainAlbumPage {
+.boxAlbumPage .mainAlbumPage {
   padding-top: 5em;
   padding-bottom: 1.5em;
   display: flex;
@@ -347,27 +352,30 @@ body footer {
   font-size: 0.7em;
   font-weight: bold;
 }
-.box .boxAlbumPage .mainAlbumPage h1 {
+.boxAlbumPage .mainAlbumPage h1 {
   font-size: 6em;
   font-weight: bold;
 }
-.box .boxAlbumPage .mainAlbumPage .detailsAlbum {
+.boxAlbumPage .mainAlbumPage .detailsAlbum {
   font-size: 0.7em;
 }
-.box .albumCardFooter div i {
+
+.albumCardFooter div i {
   font-size: 1.5em;
   color: lightgrey;
 }
-.box .albumCardFooter p {
+.albumCardFooter p {
   color: lightgrey;
   font-size: 0.9em;
 }
-.box .albumCardFooter .palyAlbum {
+.albumCardFooter .palyAlbum {
   background-color: #171717;
   height: 30px;
   width: 30px;
 }
-.box .footer2 {
+
+/* footer2 */
+.footer2 {
   padding: 1em 0em;
   color: lightgrey;
   position: -webkit-sticky;
@@ -375,23 +383,24 @@ body footer {
   bottom: 0;
   background: linear-gradient(180deg, rgba(59, 59, 59, 0) 0%, #121212 100%);
 }
-.box .footer2 p {
+.footer2 p {
   font-size: 0.8em;
 }
-.box .footer2 i {
+.footer2 i {
   font-size: 1.1em;
 }
-.box .footer2 i:hover {
+.footer2 i:hover {
   color: white;
 }
-.box .playerAlbum {
+
+.playerAlbum {
   padding-top: 1em;
   border-top: 0.3px solid;
   display: flex;
   padding-left: 1em;
   cursor: pointer;
 }
-.box .playerAlbum i {
+.playerAlbum i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -402,209 +411,226 @@ body footer {
   color: lightgrey;
 }
 @media screen and (max-width: 768px) {
-  .box .playerAlbum .iconPlayRandMob {
+  .playerAlbum .iconPlayRandMob {
     padding-right: 1em;
     width: 100%;
     display: flex;
     justify-content: end;
   }
 }
-.box .bodyAlbum {
+
+.bodyAlbum {
   padding-top: 3em;
   color: lightgrey;
   font-size: 0.5em;
 }
-.box .bodyAlbum ul {
+.bodyAlbum ul {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.5px solid #3f3f3f;
   padding: 0 2.5em;
   margin: 2.5em;
 }
-.box .bodyAlbum ul span {
+.bodyAlbum ul span {
   display: flex;
   padding-right: 10em;
 }
-.box .bodyAlbum ul span li {
+.bodyAlbum ul span li {
   padding-left: 30em;
 }
-.box #footmobcenter span p {
+
+#footmobcenter span p {
   font-size: 0.8em;
 }
-.box #cardOverlay {
+
+#cardOverlay {
   height: 280px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.box .arrowMobile {
+
+.arrowMobile {
   display: none;
 }
-.box .textBox i {
+
+.textBox i {
   color: #3d91f4;
   font-size: 1.2em;
 }
-.box .textBox p {
+.textBox p {
   font-size: 0.8em;
   font-weight: bold;
 }
-.box .textBox h5 {
+.textBox h5 {
   font-weight: bold;
   font-size: 3em;
 }
-.box .shuffle {
+
+.shuffle {
   display: none;
 }
-.box .circlePlay {
+
+.circlePlay {
   width: 50px;
   height: 50px;
   background-color: #1db954;
   border-radius: 50%;
   transition: all 0.2s ease-in-out;
 }
-.box .circlePlay:hover {
+.circlePlay:hover {
   cursor: pointer;
   box-shadow: 0px 0px 24px -6px rgba(29, 235, 102, 0.76);
   -webkit-box-shadow: 0px 0px 24px -6px rgba(29, 235, 102, 0.76);
   transform: scale(1.1);
 }
-.box .circlePlay i {
+.circlePlay i {
   font-size: 1.8em;
   color: black;
 }
-.box .popolari {
+
+.popolari {
   font-weight: bold;
   color: white;
   font-size: 1.2em;
 }
-.box .follow {
+
+.follow {
   border: none;
   border: 1px solid white;
   padding: 0px 20px;
 }
-.box .follow p {
+.follow p {
   font-size: 0.6em;
   font-weight: bold;
   letter-spacing: 1.1px;
 }
-.box .threeDots i {
+
+.threeDots i {
   color: lightgrey;
   font-size: 1.2em;
 }
-.box .threeDots:hover {
+.threeDots:hover {
   cursor: pointer;
 }
-.box .left #smallCover {
+
+.left #smallCover {
   width: 55px;
   height: 55px;
 }
-.box .left p {
+.left p {
   color: white;
   font-size: 0.9em;
 }
-.box .left .noneDesktop {
+.left .noneDesktop {
   display: none;
 }
-.box .center p {
+
+.center p {
   color: rgb(149, 137, 137);
   font-size: 0.8em;
 }
-.box .right p {
+
+.right p {
   color: rgb(149, 137, 137);
   font-size: 0.8em;
 }
-.box .right i {
+.right i {
   display: none;
 }
-.box #imageArtistCircle {
+
+#imageArtistCircle {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
-.box #imageArtistCircle:hover {
+#imageArtistCircle:hover {
   cursor: pointer;
 }
-.box .rightTextImage .whiteText {
+
+.rightTextImage .whiteText {
   color: white;
   font-weight: bold;
   font-size: 0.6em;
 }
-.box .rightTextImage p {
+.rightTextImage p {
   color: rgb(149, 137, 137);
   font-size: 0.6em;
 }
-.box .hoverArtist:hover {
+
+.hoverArtist:hover {
   cursor: pointer;
   background-color: rgba(63, 63, 63, 0.4901960784);
   border-radius: 6px;
 }
+
 @media screen and (max-width: 770px) {
-  .box .topBar {
+  .topBar {
     display: none !important;
   }
-  .box .arrowMobile {
+  .arrowMobile {
     display: block;
     background-color: rgba(46, 46, 46, 0.5176470588);
     width: 40px;
     height: 40px;
     border-radius: 50%;
   }
-  .box .arrowMobile i {
+  .arrowMobile i {
     color: white;
   }
-  .box h5 {
+  h5 {
     position: relative;
     top: 95px;
   }
-  .box .mobileview {
+  .mobileview {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
   }
-  .box .reverse {
+  .reverse {
     display: flex;
     flex-direction: column;
   }
-  .box .popolari {
+  .popolari {
     font-size: 1em;
   }
-  .box .hiddenMobile {
+  .hiddenMobile {
     display: none;
   }
-  .box .downMobile {
+  .downMobile {
     position: relative;
     top: 48px;
     font-weight: 400 !important;
   }
-  .box .reverseMobileIcon {
+  .reverseMobileIcon {
     display: flex;
     justify-content: space-between;
   }
-  .box .follow {
+  .follow {
     border: none;
     border: 1px solid white;
     border-radius: 30px;
     padding: 0px 5px;
   }
-  .box .shuffle {
+  .shuffle {
     display: block;
     color: lightgrey;
     font-size: 1.6em;
   }
-  .box .noneDesktop {
+  .noneDesktop {
     display: block !important;
   }
-  .box .center {
+  .center {
     display: none;
   }
-  .box .right p {
+  .right p {
     display: none;
   }
-  .box .right i {
+  .right i {
     display: block;
     color: rgb(236, 236, 236);
     font-size: 1.3em;
   }
-  .box .rightTextImage {
+  .rightTextImage {
     font-size: 1.3em;
   }
 }/*# sourceMappingURL=style.css.map */
