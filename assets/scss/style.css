@@ -307,13 +307,37 @@ body footer {
   box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
   -webkit-box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
 }
-.thirdCard .cardBody h5 {
+
+.cardBody h5 {
   color: white;
   font-weight: bold;
   font-size: 0.9em;
 }
-.thirdCard .cardBody p {
+.cardBody p {
   color: lightgrey;
+  font-size: 0.7em;
+}
+
+.boxAlbumPage {
+  display: flex;
+  margin-top: 1em;
+  color: white;
+}
+.boxAlbumPage .mainAlbumPage {
+  padding-top: 5em;
+  padding-bottom: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-left: 1em;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+.boxAlbumPage .mainAlbumPage h1 {
+  font-size: 6em;
+  font-weight: bold;
+}
+.boxAlbumPage .mainAlbumPage .detailsAlbum {
   font-size: 0.7em;
 }
 
@@ -348,4 +372,54 @@ body footer {
 }
 .footer2 i:hover {
   color: white;
+}
+
+.playerAlbum {
+  padding-top: 1em;
+  border-top: 0.3px solid;
+  display: flex;
+  padding-left: 1em;
+  cursor: pointer;
+}
+.playerAlbum i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  color: lightgrey;
+}
+@media screen and (max-width: 768px) {
+  .playerAlbum .iconPlayRandMob {
+    padding-right: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.bodyAlbum {
+  padding-top: 3em;
+  color: lightgrey;
+  font-size: 0.5em;
+}
+.bodyAlbum ul {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #3f3f3f;
+  padding: 0 2.5em;
+  margin: 2.5em;
+}
+.bodyAlbum ul span {
+  display: flex;
+  padding-right: 10em;
+}
+.bodyAlbum ul span li {
+  padding-left: 30em;
+}
+
+#footmobcenter span p {
+  font-size: 0.8em;
 }/*# sourceMappingURL=style.css.map */

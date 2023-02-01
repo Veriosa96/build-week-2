@@ -3,6 +3,7 @@
 
 body {
   font-family: $font-family;
+
   #side-left {
     background-color: $black;
     @media screen and (max-width: 770px) {
@@ -140,7 +141,8 @@ body {
       img {
         width: 1.5em;
         height: 1.3em;
-      }
+        }
+      
       .dropdown-menu {
         font-size: 0.8em;
         font-weight: bold;
@@ -324,6 +326,7 @@ body {
       }
     }
   }
+}
 
   .cardBody {
     h5 {
@@ -334,6 +337,34 @@ body {
 
     p {
       color: $textGray;
+      font-size: 0.7em;
+    }
+  }
+
+
+// INIZIO ALBUM PAGE
+
+.boxAlbumPage {
+  display: flex;
+  margin-top: 1em;
+  color: $textWhite;
+
+
+  
+  .mainAlbumPage {
+    padding-top: 5em;
+    padding-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-left: 1em;
+    font-size: 0.7em;
+    font-weight: bold;
+    h1 {
+      font-size: 6em;
+      font-weight: bold;
+    }
+    .detailsAlbum {
       font-size: 0.7em;
     }
   }
@@ -374,3 +405,63 @@ body {
   bottom: 0;
   background: linear-gradient(180deg, #3b3b3b00 0%, #121212 100%);
 }
+.playerAlbum {
+  padding-top: 1em;
+  border-top: 0.3px solid;
+  display: flex;
+  padding-left: 1em;
+  cursor: pointer;
+  i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    color: $textGray;
+
+  }
+  @media screen and(max-width:768px){
+    .iconPlayRandMob{
+      padding-right: 1em;
+      width: 100%;
+      display: flex;
+      justify-content: end;
+    }
+  }
+}
+
+.bodyAlbum{
+  padding-top: 3em;
+  color: $textGray;
+  font-size: 0.5em;
+  ul{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid $lightgrey;
+    padding: 0 2.5em;
+    margin: 2.5em;
+    span {
+      display: flex;
+      padding-right: 10em;
+      li{
+        padding-left: 30em;
+
+      };
+    }
+  }
+}
+#footmobcenter{
+  span{
+    p{
+      font-size: 0.8em;
+    }
+    
+  }
+}
+
+
+
+
+
