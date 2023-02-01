@@ -65,8 +65,6 @@ const secondSection = async () => {
       <div class="card-body">
         <p class="card-title">${title_short}</p>
       </div>`;
-    let idArtist = artist.id;
-    let idAlbum = album.id;
   });
 };
 
