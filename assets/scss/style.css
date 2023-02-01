@@ -52,6 +52,15 @@ body #side-left #icons div span p:hover {
   cursor: pointer;
   color: white;
 }
+body #side-left #playlist li {
+  font-size: 0.7em;
+  color: lightgrey;
+}
+body #side-left #playlist li:hover {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
 @media screen and (min-width: 766px) {
   body #center {
     background: linear-gradient(180deg, #303030 0%, #121212 100%);
@@ -287,8 +296,9 @@ body footer {
 }
 
 .thirdCard {
+  height: 250px;
   background-color: #171717;
-  padding: 1em;
+  padding: 0.5em;
   cursor: pointer;
   transition: all 0.3s ease;
   margin: 0.5em;
@@ -296,15 +306,23 @@ body footer {
 @media screen and (max-width: 765px) {
   .thirdCard {
     background-color: #3f3f3f;
+    height: 200px;
   }
 }
 .thirdCard:hover {
   background-color: #323232;
 }
 .thirdCard .img img {
-  width: 8.5em;
+  width: 8em;
+  height: 7em;
 }
-.thirdCard .img img:hover {
+@media screen and (max-width: 765px) {
+  .thirdCard .img img {
+    width: 9em;
+    height: 8em;
+  }
+}
+.thirdCard .img:hover {
   box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
   -webkit-box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
 }

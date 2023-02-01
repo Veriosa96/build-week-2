@@ -27,7 +27,14 @@ const mainSong = async () => {
     </div>
   </div>
   `;
+  let idArtist = favSong.artist.id;
+  let idAlbum = favSong.album.id;
+  console.log("idArtist", idArtist);
+  console.log("idAlbum", idAlbum);
+
+  return idArtist, idAlbum;
 };
+
 /* FIRST SECTION */
 const nascondi = () => {
   let element = document.querySelectorAll(".box");
@@ -51,14 +58,16 @@ const secondSection = async () => {
     canzoni[2],
     canzoni[3],
     canzoni[4],
-    canzoni[5],
+    canzoni[5]
   ];
-  favSongs.forEach(({ title_short, album }) => {
+  favSongs.forEach(({ title_short, album, artist }) => {
     second.innerHTML += `<div class="card col" id="second-section">
       <img src="${album.cover_small}" alt="image">
       <div class="card-body">
         <p class="card-title">${title_short}</p>
       </div>`;
+    let idArtist = artist.id;
+    let idAlbum = album.id;
   });
 };
 
@@ -66,14 +75,25 @@ const secondSection = async () => {
 const thirdSection = async () => {
   let canzoni = await fetchSongs("album");
   let third = document.getElementById("thirdJs");
-
-  canzoni.forEach(({ artist, album }) => {
+  let albums = [
+    canzoni[1],
+    canzoni[2],
+    canzoni[3],
+    canzoni[6],
+    canzoni[10],
+    canzoni[11],
+    canzoni[13],
+    canzoni[14],
+    canzoni[16],
+    canzoni[17]
+  ];
+  albums.forEach(({ artist, album }) => {
     third.innerHTML += `
 
     <div class="col p-0">
-    <div class="card thirdCard d-flex justify-content-evenly">
+    <div class="card thirdCard d-flex justify-content-between">
     <div class="d-flex flex-row d-md-block">
-      <div class="img d-flex justify-content-center">
+      <div class="img pt-1 d-flex justify-content-center">
         <img
           src="${album.cover_medium}"
           alt=""
@@ -107,8 +127,29 @@ const thirdSection = async () => {
   });
 };
 
+let playList = [
+  "Hit italiane",
+  "Top 10",
+  "Sanremo 2022",
+  "Alta rotazione",
+  "Novità pop",
+  "Internazionali",
+  "Codda con sorriso",
+  "No stress",
+  "ASMR",
+  "Cardio"
+];
+
+const play = () => {
+  let div = document.getElementById("playlist");
+  playList.forEach((e) => {
+    div.innerHTML += `<li class="list-group-item py-1">${e}</li>`;
+  });
+};
+
 window.onload = async function () {
   await mainSong();
   await secondSection();
   await thirdSection();
+  play();
 };
