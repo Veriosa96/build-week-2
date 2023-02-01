@@ -51,7 +51,7 @@ const secondSection = async () => {
     canzoni[2],
     canzoni[3],
     canzoni[4],
-    canzoni[5],
+    canzoni[5]
   ];
   favSongs.forEach(({ title_short, album }) => {
     second.innerHTML += `<div class="card col" id="second-section">
@@ -66,14 +66,25 @@ const secondSection = async () => {
 const thirdSection = async () => {
   let canzoni = await fetchSongs("album");
   let third = document.getElementById("thirdJs");
-
-  canzoni.forEach(({ artist, album }) => {
+  let albums = [
+    canzoni[1],
+    canzoni[2],
+    canzoni[3],
+    canzoni[6],
+    canzoni[10],
+    canzoni[11],
+    canzoni[13],
+    canzoni[14],
+    canzoni[16],
+    canzoni[17]
+  ];
+  albums.forEach(({ artist, album }) => {
     third.innerHTML += `
 
     <div class="col p-0">
-    <div class="card thirdCard d-flex justify-content-evenly">
+    <div class="card thirdCard d-flex justify-content-between">
     <div class="d-flex flex-row d-md-block">
-      <div class="img d-flex justify-content-center">
+      <div class="img pt-1 d-flex justify-content-center">
         <img
           src="${album.cover_medium}"
           alt=""
