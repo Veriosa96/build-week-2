@@ -110,6 +110,7 @@ const thirdSection = async () => {
     canzoni[18],
     canzoni[19]
   ];
+  let idArtist = [];
   for (let i = 0; i < albums.length; i++) {
     third.innerHTML += `
     <div class="col p-0">
@@ -146,19 +147,17 @@ const thirdSection = async () => {
   </div>
 
     `;
-    let idArtist = albums[i].artist.id;
-    console.log(idArtist);
-    let artista = document.querySelectorAll(".artistPage2");
-    console.log(artista);
+    idArtist.push(albums[i].artist.id);
   }
-  let pageArtist2 = () => {
-    for (let i = 0; i < idArtist.length; i++) {
+  console.log(idArtist);
+  let artista = document.querySelectorAll(".artistPage2");
+  console.log(artista);
+  for (let i = 0; i < artista.length; i++) {
+    let pageArtist2 = () => {
       window.location.assign(`../../artist-page.html?idArtist=${idArtist[i]}`);
-    }
-  };
-  artista[i].addEventListener("click", () => {
-    pageArtist2();
-  });
+    };
+    artista[i].addEventListener("click", pageArtist2);
+  }
 };
 
 let playList = [
