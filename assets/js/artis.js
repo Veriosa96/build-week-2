@@ -86,6 +86,6 @@ let tracks = async () => {
 };
 
 window.onload = async function () {
-  artist();
-  tracks();
+  await artist();
+  await tracks();
 };
