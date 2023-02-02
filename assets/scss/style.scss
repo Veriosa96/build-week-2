@@ -374,22 +374,34 @@ body {
   margin-top: 1em;
   color: $textWhite;
 
+  #imgAlbum{
+    height: 175px;
+    width: 175px;
+    margin-left: 1em;
+    box-shadow: 0px 0px 24px -1px rgba(0, 0, 0, 0.74);
+-webkit-box-shadow: 0px 0px 24px -1px rgba(0, 0, 0, 0.74);
+  }
+
   .mainAlbumPage {
     padding-top: 5em;
-    padding-bottom: 1.5em;
+
     display: flex;
     flex-direction: column;
     justify-content: end;
     margin-left: 1em;
     font-size: 0.7em;
     font-weight: bold;
-    h1 {
-      font-size: 6em;
+    h2 {
       font-weight: bold;
+      
     }
-    .detailsAlbum {
-      font-size: 0.7em;
+    .miniImgAlbum{
+      margin-right: 0.5em;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
     }
+
   }
 }
 
@@ -445,7 +457,7 @@ body {
   padding-top: 1em;
   border-top: 0.3px solid;
   display: flex;
-  padding-left: 1em;
+  padding-left: 1.8em;
   cursor: pointer;
   i {
     display: flex;

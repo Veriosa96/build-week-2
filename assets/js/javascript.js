@@ -186,3 +186,5 @@ window.onload = async function () {
   await thirdSection();
   play();
 };
+
+
