@@ -61,7 +61,7 @@ const secondSection = async () => {
   ];
   favSongs.forEach(({ title_short, album, artist }) => {
     second.innerHTML += `<div class="card col p-0" id="second-section">
-      <img src="${album.cover_small}" alt="image">
+      <img src="${album.cover_small}" alt="image" class="p-0 m-0">
       <div class="card-body">
         <p class="card-title">${title_short}</p>
       </div>`;

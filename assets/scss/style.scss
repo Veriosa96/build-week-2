@@ -289,15 +289,18 @@ body {
     background-color: $lightgrey !important;
     color: $textWhite;
     margin-bottom: 0.8em;
-    margin-right: 0.5em;
-    width: 17rem;
+    //margin-right: 0.2em;
+    max-width: 17rem;
+    min-width: 9rem;
     &:hover {
       background-color: rgb(97, 96, 96) !important;
     }
     img {
       height: 100%;
-      padding-right: 0.5em;
+      width: 28%;
+      border-radius: 5px 0 0 5px;
     }
+    padding-right: 0.5em;
   }
 }
 

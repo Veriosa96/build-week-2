@@ -268,8 +268,9 @@ body footer {
   background-color: #3f3f3f !important;
   color: white;
   margin-bottom: 0.8em;
-  margin-right: 0.5em;
-  width: 17rem;
+  max-width: 17rem;
+  min-width: 9rem;
+  padding-right: 0.5em;
 }
 @media screen and (max-width: 765px) {
   #cont #second-section {
@@ -281,7 +282,8 @@ body footer {
 }
 #cont #second-section img {
   height: 100%;
-  padding-right: 0.5em;
+  width: 28%;
+  border-radius: 5px 0 0 5px;
 }
 
 /* THIRD SECTION */
