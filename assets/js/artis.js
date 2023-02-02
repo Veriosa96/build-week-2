@@ -1,14 +1,10 @@
-/* // devo inserire url
-let url = window.location.search;
-
-// creo con urlsearch per il collegamento url del risultato del quiz
-const parametro = new URLSearchParams(url);
+// devo inserire url
+let url = new URLSearchParams(location.search);
 
 // mi prendo dall'url il vaore result
-const id = parametro.get("idArtist");
- */
+let id = url.get("idArtist");
+console.log(id);
 
-let id = "415";
 let api = "https://striveschool-api.herokuapp.com/api/deezer/artist/";
 let endpoint = "/top?limit=50";
 const fetchArtist = async () => {
