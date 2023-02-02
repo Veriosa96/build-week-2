@@ -15,7 +15,7 @@ const mainSong = async () => {
     <p>${favSong.album.title}</p>
     <div class="bodyCard">
         <a href="../../Album.html"><h1>${favSong.title}</h1></a>
-        <a href="../../artist-page.html"><p>${favSong.artist.name}</p></a>
+        <p id="artistPage" type="button">${favSong.artist.name}</p>
         <p>Ascolta il nuovo singolo di</p>
         <div class="buttonCard">
             <ul>
@@ -27,10 +27,36 @@ const mainSong = async () => {
     </div>
   </div>
   `;
+
+  let titolo = document.getElementById("titolo");
+  titolo.innerText = `${favSong.title}`;
+
+  let songInfo = document.getElementById("songInfo");
+  songInfo.innerHTML = `
+<div class="image-container">
+            <img src="${favSong.album.cover_medium}" />
+          </div>
+          <div class="song-description">
+            <p class="title">${favSong.title}</p>
+            <p class="artist">${favSong.artist.name}</p>
+          </div>
+`;
+
   let idArtist = favSong.artist.id;
   let idAlbum = favSong.album.id;
-  console.log("idArtist", idArtist);
-  console.log("idAlbum", idAlbum);
+  let artista = document.getElementById("artistPage");
+
+  const pageArtist = () => {
+    window.location.assign(`../../artist-page.html?id=${idArtist}`);
+    console.log(idArtist);
+  };
+
+  artista.addEventListener("click", () => {
+    pageArtist();
+  });
+
+  //artista.onclick = pageArtist;
+
   return idArtist, idAlbum;
 };
 
