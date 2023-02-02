@@ -20,14 +20,17 @@ const album = async () => {
     <div class="mainAlbumPage">
       <p class="d-sm-none d-md-inline">Album</p>
       <h2 class="text-start ">${albums.title}</h2>
-      <p class="detailsAlbum d-sm-none d-lg-inline"><img class="miniImgAlbum" src="${albums.artist.picture_small}" alt="">${albums.artist.name} • ${albums.realease_date}
-      ${albums.realease_date} • ${albums.nb_tracks}, ${albums.tracks.data.duration}</p>
-      <p class="d-sm-inline d-md-inline d-lg-none">${albums.artist.name} • ${albums.realease_date}</p>
+      <p class="detailsAlbum d-none d-lg-inline"><img class="miniImgAlbum" src="${albums.artist.picture_small}" alt="">${albums.artist.name} •
+      ${albums.release_date} • ${albums.nb_tracks}, ${albums.duration} sec</p>
+      <div class="d-inline d-md-inline d-lg-none">
+      <p>${albums.artist.name}</p>
+      <p>Album • ${albums.release_date}</p>
+      </div>
     </div>
   </div>
   `;
 };
 
-window.onload= async ()=>{
-    await album()
-}
+window.onload = async () => {
+  await album();
+};

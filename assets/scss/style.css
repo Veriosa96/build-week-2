@@ -456,6 +456,11 @@ body footer {
   padding: 0 2.5em;
   margin: 2.5em;
 }
+@media screen and (max-width: 768px) {
+  .bodyAlbum ul {
+    border: none;
+  }
+}
 .bodyAlbum ul span {
   display: flex;
   padding-right: 10em;

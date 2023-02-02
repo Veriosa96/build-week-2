@@ -374,12 +374,12 @@ body {
   margin-top: 1em;
   color: $textWhite;
 
-  #imgAlbum{
+  #imgAlbum {
     height: 175px;
     width: 175px;
     margin-left: 1em;
     box-shadow: 0px 0px 24px -1px rgba(0, 0, 0, 0.74);
--webkit-box-shadow: 0px 0px 24px -1px rgba(0, 0, 0, 0.74);
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(0, 0, 0, 0.74);
   }
 
   .mainAlbumPage {
@@ -393,15 +393,13 @@ body {
     font-weight: bold;
     h2 {
       font-weight: bold;
-      
     }
-    .miniImgAlbum{
+    .miniImgAlbum {
       margin-right: 0.5em;
       border-radius: 50%;
       width: 20px;
       height: 20px;
     }
-
   }
 }
 
@@ -487,6 +485,9 @@ body {
     display: flex;
     justify-content: space-between;
     border-bottom: 0.5px solid $lightgrey;
+    @media screen and (max-width: 768px) {
+      border: none;
+    }
     padding: 0 2.5em;
     margin: 2.5em;
     span {
