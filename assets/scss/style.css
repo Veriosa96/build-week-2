@@ -363,6 +363,17 @@ body footer {
   font-size: 0.7em;
 }
 
+.startButton {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+.startButton i {
+  color: black;
+  font-size: 1.1em;
+}
+
 .albumCardFooter div i {
   font-size: 1.5em;
   color: lightgrey;
@@ -737,7 +748,6 @@ span:hover {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 1.5em;
   color: var(--secondary-color);
 }
 
