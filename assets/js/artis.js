@@ -59,9 +59,9 @@ let tracks = async () => {
 
         console.log(finalDurata);
         div.innerHTML += `
-        <div class="col d-flex justify-content-between align-items-center hoverArtist">
+        <div class="d-flex mt-2 justify-content-between align-items-center hoverArtist">
           <div class="left d-flex align-items-center">
-            <p class="me-3">${numb}</p>
+            <p class="me-3 numbRanks">${numb}</p>
             <img id="smallCover" src="${tracks[i].album.cover_small}" alt=""
                 class="me-3" />
             <div>

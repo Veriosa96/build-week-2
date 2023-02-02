@@ -516,9 +516,15 @@ body footer {
   cursor: pointer;
 }
 
+.left {
+  width: 320px;
+}
 .left #smallCover {
   width: 55px;
   height: 55px;
+}
+.left .numbRanks {
+  width: 6px;
 }
 .left p {
   color: white;

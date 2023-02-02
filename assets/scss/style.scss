@@ -559,9 +559,14 @@ body {
 }
 
 .left {
+  width: 320px;
   #smallCover {
     width: 55px;
     height: 55px;
+  }
+
+  .numbRanks {
+    width: 6px;
   }
 
   p {
