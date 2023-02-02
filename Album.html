@@ -71,7 +71,7 @@
             </ul>
           </div>
         </div>
-        
+
         <!-- INIZIO ALBUM PAGE -->
         <div class="container boxAlbumPage ">
           <div class="row d-flex " id="headAlbumPage">
@@ -112,18 +112,39 @@
             </span>
           </ul>
         </div>
-        <div class="d-lg-none text-secondary-emphasis d-flex justify-content-evenly" id="footmobcenter">
-          <span class="d-flex flex-column align-items-center"><i class="bi bi-house-door-fill"></i>
-            <p>Home</p>
-          </span>
-          <span class="d-flex flex-column align-items-center"><i class="bi bi-search"></i>
-            <p>Cerca</p>
-          </span>
-          <span class="d-flex flex-column align-items-center"><i class="bi bi-music-note-list"></i>
-            <p>La tua libreria</p>
-          </span>
+      </div>
+
+      <!--START MUSIC PLAYER-->
+
+      <div class="d-flex justify-content-between align-items-center d-md-none" id="playerMobile">
+        <div class="testtesto d-flex align-items-center">
+          <i class="bi bi-disc pe-2 fs-2"></i>
+          <h6 id="titolo" class="fw-bold fs-6"></h6>
+        </div>
+        <div class="iconefooter">
+          <i class="bi bi-laptop"></i>
+          <i class="bi bi-heart"></i>
+          <i class="bi bi-play-fill"></i>
         </div>
       </div>
+
+      <!--FINISH MUSIC PLAYER-->
+      <!-- footer mobile version -->
+      <footer class="footer2 d-flex justify-content-evenly d-md-none m-0 p-0 text-center">
+        <div>
+          <i class="bi bi-house-door-fill"></i>
+          <p>Home</p>
+        </div>
+        <div>
+          <i class="bi bi-search"></i>
+          <p>Cerca</p>
+        </div>
+        <div>
+          <i class="bi bi-music-note-list"></i>
+          <p>Libreria</p>
+        </div>
+      </footer>
+
       <!--SIDE RIGHT-->
 
       <div class="col-lg-2 d-flex flex-column" id="side-right">
@@ -188,7 +209,51 @@
       </div>
     </div>
 
-    <footer>Music Bar</footer>
+    <footer>
+      <div class="music-player d-none d-md-flex">
+        <div class="song-bar">
+          <div class="song-infos" id="songInfo">
+
+          </div>
+          <div class="icons">
+            <i class="bi bi-heart"></i>
+          </div>
+        </div>
+        <div class="progress-controller">
+          <div class="control-buttons">
+            <i class="bi bi-shuffle"></i>
+
+            <i class="bi bi-skip-start-fill"></i>
+
+            <div class="startButton d-flex justify-content-center align-items-center">
+              <i class="bi bi-play-fill"></i>
+            </div>
+            <i class="bi bi-skip-end-fill"></i>
+            <i class="bi bi-arrow-clockwise"></i>
+          </div>
+          <div class="progress-container">
+            <span>0:49 </span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+            <span>3:15</span>
+          </div>
+        </div>
+        <div id="other" class="other-features">
+          <div id="other" class="other-features d-flex align-items-center">
+            <i class="bi bi-mic-fill"></i>
+            <i class="bi bi-list"></i>
+            <i class="bi bi-laptop"></i>
+            <i class="bi bi-volume-up-fill"></i>
+            <div class="volume-bar">
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"></script>
