@@ -5,7 +5,6 @@ const fetchSongs = async function (query) {
   return song;
 };
 
-let footerSong = {};
 const mainSong = async () => {
   let canzone = await fetchSongs("dumb");
   let div = document.getElementById("dataTrack");
@@ -20,7 +19,7 @@ const mainSong = async () => {
         <p>Ascolta il nuovo singolo di</p>
         <div class="buttonCard">
             <ul>
-                <li class="firstButton">Play</li>
+                <li class="playSong1 firstButton">Play</li>
                 <li class="secondButton">Salva</li>
                 <i class="bi bi-three-dots"></i>
             </ul>
@@ -29,17 +28,12 @@ const mainSong = async () => {
   </div>
   `;
 
-  footerSong = {
-    title: favSong.title,
-    artist: favSong.artist.name,
-    img: favSong.album.cover_medium
-  };
-
-  /* let titolo = document.getElementById("titolo");
-  titolo.innerText = `${favSong.title}`;
-
-  let songInfo = document.getElementById("songInfo");
-  songInfo.innerHTML = `
+  let playSong = document.querySelector(".playSong1");
+  const footerPlayer1 = () => {
+    let titolo = document.getElementById("titolo");
+    titolo.innerText = `${favSong.title}`;
+    let songInfo = document.getElementById("songInfo");
+    songInfo.innerHTML = `
           <div class="image-container">
             <img src="${favSong.album.cover_medium}" />
           </div>
@@ -47,7 +41,11 @@ const mainSong = async () => {
             <p class="title">${favSong.title}</p>
             <p class="artist">${favSong.artist.name}</p>
           </div>
-`; */
+`;
+  };
+  playSong.addEventListener("click", () => {
+    footerPlayer1();
+  });
 
   let idArtist = favSong.artist.id;
   let artista = document.getElementById("artistPage1");
@@ -67,8 +65,6 @@ const mainSong = async () => {
   album.addEventListener("click", () => {
     pageAlbum();
   });
-  console.log(footerSong);
-  return footerSong;
 };
 
 /* FIRST SECTION */
@@ -95,11 +91,13 @@ const secondSection = async () => {
     canzoni[4],
     canzoni[5]
   ];
+  console.log(favSongs);
+  let artistName = [];
   let idAlbum = [];
-  favSongs.forEach(({ title_short, album }) => {
+  favSongs.forEach(({ title_short, album, artist }) => {
     second.innerHTML += `
     <div class="card col p-0 text-truncate" id="second-section">
-      <div class="d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center justify-content-between playSong2">
         <img src="${album.cover_small}" alt="image" class="p-0 m-0">
         <div class="card-body p-0">
           <p class="pageAlbum2 card-title ps-2">${title_short}</p>
@@ -107,11 +105,29 @@ const secondSection = async () => {
       </div>
     </div>
       `;
+    artistName.push(artist.name);
     idAlbum.push(album.id);
   });
   let album = document.querySelectorAll(".pageAlbum2");
-
+  let playSong = document.querySelectorAll(".playSong2");
   for (let i = 0; i < album.length; i++) {
+    const footerPlayer2 = () => {
+      let titolo = document.getElementById("titolo");
+      titolo.innerText = `${favSongs[i].title_short}`;
+      let songInfo = document.getElementById("songInfo");
+      songInfo.innerHTML = `
+            <div class="image-container">
+              <img src="${favSongs[i].album.cover_medium}" />
+            </div>
+            <div class="song-description">
+              <p class="title">${favSongs[i].title_short}</p>
+              <p class="artist">${artistName[i]}</p>
+            </div>
+  `;
+    };
+    playSong[i].addEventListener("click", () => {
+      footerPlayer2();
+    });
     let pageAlbum2 = () => {
       window.location.assign(`../../Album.html?idAlbum=${idAlbum[i]}`);
     };
@@ -141,7 +157,7 @@ const thirdSection = async () => {
     third.innerHTML += `
     <div class="col p-0">
     <div class="card thirdCard d-flex justify-content-between">
-    <div class="d-flex flex-row d-md-block">
+    <div class="d-flex flex-row d-md-block playSong3">
         <img
           src="${albums[i].album.cover_medium}"
           alt=""
@@ -174,9 +190,26 @@ const thirdSection = async () => {
     idArtist.push(albums[i].artist.id);
     idAlbum.push(albums[i].album.id);
   }
-
+  let playSong = document.querySelectorAll(".playSong3");
   let artista = document.querySelectorAll(".artistPage2");
   for (let i = 0; i < artista.length; i++) {
+    const footerPlayer2 = () => {
+      let titolo = document.getElementById("titolo");
+      titolo.innerText = `${albums[i].album.title}`;
+      let songInfo = document.getElementById("songInfo");
+      songInfo.innerHTML = `
+            <div class="image-container">
+              <img src="${albums[i].album.title}" />
+            </div>
+            <div class="song-description">
+              <p class="title">${albums[i].album.title}</p>
+              <p class="artist">${albums[i].artist.name}</p>
+            </div>
+  `;
+    };
+    playSong[i].addEventListener("click", () => {
+      footerPlayer2();
+    });
     let pageArtist2 = () => {
       window.location.assign(`../../artist-page.html?idArtist=${idArtist[i]}`);
     };
