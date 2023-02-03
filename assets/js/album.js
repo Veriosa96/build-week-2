@@ -63,7 +63,7 @@ const tracks = async () => {
       <div class="d-flex justify-content-between align-items-center">
         <li class="pe-3 d-none d-md-block">${numb}</li>
         <div class="songAlbumJS d-flex flex-column justify-content-center">
-          <li class="text-white fw-bold">${trackPage[i].title_short}</li>
+          <li class="playSong1 text-white fw-bold">${trackPage[i].title_short}</li>
           <li>${trackPage[i].artist.name}</li>
         </div>
       </div>
@@ -74,6 +74,26 @@ const tracks = async () => {
       <i class="bi bi-three-dots-vertical fs-4 d-md-none"></i>
     </div>
 `;
+  }
+  let playSong1 = document.querySelectorAll(".playSong1");
+  for (let i = 0; i < 11; i++) {
+    const footerPlayer1 = () => {
+      let titolo = document.getElementById("titolo");
+      titolo.innerText = `${trackPage[i].title_short}`;
+      let songInfo = document.getElementById("songInfo");
+      songInfo.innerHTML = `
+      <div class="image-container">
+        <img src="${trackPage[i].album.cover_medium}" />
+      </div>
+      <div class="song-description">
+        <p class="title">${trackPage[i].title_short}</p>
+        <p class="artist">${trackPage[i].artist.name}</p>
+      </div>
+`;
+    };
+    playSong1[i].addEventListener("click", () => {
+      footerPlayer1();
+    });
   }
 };
 
