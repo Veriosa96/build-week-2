@@ -81,7 +81,28 @@ let tracks = async () => {
   }
 };
 
+let playList = [
+  "Hit italiane",
+  "Top 10",
+  "Sanremo 2022",
+  "Alta rotazione",
+  "Novità pop",
+  "Internazionali",
+  "Codda con sorriso",
+  "No stress",
+  "ASMR",
+  "Cardio",
+];
+
+const play = () => {
+  let div = document.getElementById("playlist");
+  playList.forEach((e) => {
+    div.innerHTML += `<li class="list-group-item py-1">${e}</li>`;
+  });
+};
+
 window.onload = async function () {
   await artist();
   await tracks();
+  await play();
 };
