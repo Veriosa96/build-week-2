@@ -81,6 +81,8 @@ let tracks = async () => {
   }
 };
 
+// PLAYLIST LEFT SIDE
+
 let playList = [
   "Hit italiane",
   "Top 10",
@@ -100,6 +102,14 @@ const play = () => {
     div.innerHTML += `<li class="list-group-item py-1">${e}</li>`;
   });
 };
+
+// TURN BACK FUNCTION
+
+const arrowBack = document.getElementById("leftArrowBack");
+
+arrowBack.addEventListener("click", () => {
+  window.location.assign("home.html");
+});
 
 window.onload = async function () {
   await artist();
