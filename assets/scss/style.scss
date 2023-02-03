@@ -671,6 +671,13 @@ body {
   }
 }
 
+.viewOther {
+  font-size: 0.6em;
+  letter-spacing: 1.3px;
+  color: $textGray;
+  font-weight: bold;
+}
+
 // Inizio responsive mobile artist page
 
 @media screen and (max-width: 770px) {
