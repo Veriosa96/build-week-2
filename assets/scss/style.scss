@@ -298,23 +298,20 @@ body {
     align-items: center;
     background-color: $lightgrey !important;
     color: $textWhite;
-    margin-bottom: 0.8em;
-    margin-right: 0.1em;
-    max-width: 17rem;
-    min-width: 9rem;
     &:hover {
       background-color: rgb(97, 96, 96) !important;
     }
     img {
+      width: 100%;
       height: 100%;
-      width: 28%;
+      object-fit: contain;
+      aspect-ratio: 1/1;
       border-radius: 5px 0 0 5px;
       &:hover {
         box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
         -webkit-box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
       }
     }
-    padding-right: 0.5em;
   }
 }
 
@@ -338,7 +335,6 @@ body {
 }
 
 .thirdCard {
-  height: 250px;
   background-color: $grey;
   padding: 0.5em;
   cursor: pointer;
@@ -346,20 +342,17 @@ body {
   margin: 0.5em;
   @media screen and (max-width: 765px) {
     background-color: $lightgrey;
-    height: 200px;
   }
   &:hover {
     background-color: $cardHover;
   }
 
-  .img {
-    img {
-      @media screen and (max-width: 765px) {
-        width: 9em;
-        height: 8em;
-      }
-      width: 8em;
-      height: 7em;
+  img {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+    @media screen and (max-width: 765px) {
+      width: 40%;
     }
     &:hover {
       box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);

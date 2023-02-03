@@ -276,11 +276,6 @@ body footer {
   align-items: center;
   background-color: #3f3f3f !important;
   color: white;
-  margin-bottom: 0.8em;
-  margin-right: 0.1em;
-  max-width: 17rem;
-  min-width: 9rem;
-  padding-right: 0.5em;
 }
 @media screen and (max-width: 765px) {
   #cont #second-section {
@@ -291,8 +286,11 @@ body footer {
   background-color: rgb(97, 96, 96) !important;
 }
 #cont #second-section img {
+  width: 100%;
   height: 100%;
-  width: 28%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  aspect-ratio: 1/1;
   border-radius: 5px 0 0 5px;
 }
 #cont #second-section img:hover {
@@ -315,7 +313,6 @@ body footer {
 }
 
 .thirdCard {
-  height: 250px;
   background-color: #171717;
   padding: 0.5em;
   cursor: pointer;
@@ -325,23 +322,23 @@ body footer {
 @media screen and (max-width: 765px) {
   .thirdCard {
     background-color: #3f3f3f;
-    height: 200px;
   }
 }
 .thirdCard:hover {
   background-color: #323232;
 }
-.thirdCard .img img {
-  width: 8em;
-  height: 7em;
+.thirdCard img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  aspect-ratio: 1/1;
 }
 @media screen and (max-width: 765px) {
-  .thirdCard .img img {
-    width: 9em;
-    height: 8em;
+  .thirdCard img {
+    width: 40%;
   }
 }
-.thirdCard .img:hover {
+.thirdCard img:hover {
   box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
   -webkit-box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
 }

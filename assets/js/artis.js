@@ -61,7 +61,7 @@ let tracks = async () => {
             <img id="smallCover" src="${tracks[i].album.cover_small}" alt=""
                 class="me-3" />
             <div>
-              <p class="noneMobile albumName">${tracks[i].title}</p>
+              <p class="noneMobile albumName">${tracks[i].title_short}</p>
               <p class="noneDesktop">276.968.994</p>
             </div>
           </div>
@@ -93,7 +93,7 @@ let playList = [
   "Codda con sorriso",
   "No stress",
   "ASMR",
-  "Cardio",
+  "Cardio"
 ];
 
 const play = () => {

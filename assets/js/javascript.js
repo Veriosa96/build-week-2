@@ -83,14 +83,19 @@ const secondSection = async () => {
     canzoni[2],
     canzoni[3],
     canzoni[4],
-    canzoni[5],
+    canzoni[5]
   ];
   favSongs.forEach(({ title_short, album, artist }) => {
-    second.innerHTML += `<div class="card col p-0" id="second-section">
-      <img src="${album.cover_medium}" alt="image" class="p-0 m-0">
-      <div class="card-body">
-        <p class="card-title">${title_short}</p>
-      </div>`;
+    second.innerHTML += `
+    <div class="card col p-0 g-2 text-truncate" id="second-section">
+      <div class="d-flex align-items-center justify-content-between">
+        <img src="${album.cover_small}" alt="image" class="p-0 m-0">
+        <div class="card-body p-0">
+          <p class="card-title ps-2">${title_short}</p>
+        </div>
+      </div>
+    </div>
+      `;
   });
 };
 
@@ -108,7 +113,7 @@ const thirdSection = async () => {
     canzoni[13],
     canzoni[14],
     canzoni[18],
-    canzoni[19],
+    canzoni[19]
   ];
   let idArtist = [];
   for (let i = 0; i < albums.length; i++) {
@@ -116,15 +121,13 @@ const thirdSection = async () => {
     <div class="col p-0">
     <div class="card thirdCard d-flex justify-content-between">
     <div class="d-flex flex-row d-md-block">
-      <div class="img pt-1 d-flex justify-content-center">
         <img
           src="${albums[i].album.cover_medium}"
           alt=""
         />
-      </div>
-      <div class="cardBody p-3">
-        <h5>${albums[i].album.title}</h5>
-        <p class="artistPage2" type="button">${albums[i].artist.name}</p>
+      <div class="cardBody p-3 text-truncate">
+        <h5 class="text-truncate">${albums[i].album.title}</h5>
+        <p class="artistPage2 text-truncate" type="button">${albums[i].artist.name}</p>
       </div>
     </div>
     <div
@@ -170,7 +173,7 @@ let playList = [
   "Codda con sorriso",
   "No stress",
   "ASMR",
-  "Cardio",
+  "Cardio"
 ];
 
 const play = () => {
