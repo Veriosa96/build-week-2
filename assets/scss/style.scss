@@ -286,12 +286,11 @@ body {
 }
 
 #cont {
-  display: flex;
-  flex-wrap: wrap;
-
   #second-section {
+    width: 32%;
     @media screen and (max-width: 765px) {
       background-color: $grey !important;
+      width: 49%;
     }
     display: flex;
     flex-direction: row;

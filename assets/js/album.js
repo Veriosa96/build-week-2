@@ -4,7 +4,6 @@ let id = "12047934";
 const fetchAlbum = async () => {
   let res = await fetch(api + id);
   let data = await res.json();
-  console.log(data);
   return data;
 };
 
@@ -29,6 +28,39 @@ const album = async () => {
     </div>
   </div>
   `;
+};
+
+const tracks = async () => {
+  let traccia = await fetchAlbum();
+  let tracks = traccia.tracks;
+  let trackPage = tracks.data;
+  console.log(trackPage);
+  let trackList = document.getElementById("trackList");
+  for (let i = 0; i < 11; i++) {
+    let numb = i + 1;
+    let durata = [];
+    durata.push(trackPage[i].duration);
+    let stringDurata = durata[0].toString();
+    let pippo = stringDurata.split("");
+    pippo.splice(1, 0, ":");
+    let finalDurata = pippo.join("");
+    trackList.innerHTML += `
+    <div class="d-flex justify-content-between mb-2">
+      <div class="d-flex justify-content-between align-items-center">
+        <li class="pe-3">${numb}</li>
+        <div class="d-flex flex-column justify-content-center">
+          <li class="text-white fw-bold">${trackPage[i].title_short}</li>
+          <li>${trackPage[i].artist.name}</li>
+        </div>
+      </div>
+      <span class="d-flex justify-content-between">
+        <li class="rip">${trackPage[i].rank}</li>
+        <li>${finalDurata}</li>
+      </span>
+    </div>
+
+`;
+  }
 };
 
 // LEFT PLAYLIST
@@ -56,4 +88,5 @@ const play = () => {
 window.onload = async () => {
   await album();
   play();
+  await tracks();
 };

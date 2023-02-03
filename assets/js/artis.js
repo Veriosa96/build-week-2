@@ -35,6 +35,10 @@ let artist = async () => {
         </div>
       </div>
         `;
+  /*   let like = document.getElementById("rightTextImage");
+  like.innerHTML = `
+  <p class="whiteText">Hai messo Mi piace a 11 brani</p>
+  <p>di ${artista.name}</p>`; */
 };
 
 let tracks = async () => {
@@ -81,6 +85,13 @@ let tracks = async () => {
   }
 };
 
+let like = async () => {
+  let artista = await fetchArtist();
+  console.log(artista);
+  let rightTextImage = document.getElementById("likeArtist");
+  rightTextImage.innerHTML = `<p>di ${artista.name}</p>`;
+};
+
 // PLAYLIST LEFT SIDE
 
 let playList = [
@@ -114,5 +125,6 @@ arrowBack.addEventListener("click", () => {
 window.onload = async function () {
   await artist();
   await tracks();
-  await play();
+  play();
+  await like();
 };

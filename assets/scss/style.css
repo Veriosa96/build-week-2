@@ -266,11 +266,8 @@ body footer {
   color: lightgrey !important;
 }
 
-#cont {
-  display: flex;
-  flex-wrap: wrap;
-}
 #cont #second-section {
+  width: 32%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -280,6 +277,7 @@ body footer {
 @media screen and (max-width: 765px) {
   #cont #second-section {
     background-color: #171717 !important;
+    width: 49%;
   }
 }
 #cont #second-section:hover {
