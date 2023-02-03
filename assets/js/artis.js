@@ -19,7 +19,7 @@ let artist = async () => {
   bodyCard.innerHTML = `
         <div class="card border-0 text-bg-dark p-0">
         <img id="cardOverlay"
-          src="${artista.picture_big}"
+          src="${artista.picture_xl}"
           class="card-img rounded-0" alt="..." />
         <div class="card-img-overlay d-flex flex-column justify-content-between justify-content-md-end textBox">
           <div class="arrow arrowMobile d-flex justify-content-center align-items-center">
