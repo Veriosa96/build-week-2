@@ -104,6 +104,9 @@ body footer {
   width: 25px;
   height: 25px;
 }
+.avatars:hover {
+  cursor: pointer;
+}
 .avatars .boldName {
   font-weight: bold;
 }
@@ -291,6 +294,10 @@ body footer {
   height: 100%;
   width: 28%;
   border-radius: 5px 0 0 5px;
+}
+#cont #second-section img:hover {
+  box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
+  -webkit-box-shadow: 0px 12px 31px -2px rgba(0, 0, 0, 0.91);
 }
 
 /* THIRD SECTION */
