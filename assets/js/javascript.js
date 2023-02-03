@@ -83,11 +83,11 @@ const secondSection = async () => {
     canzoni[2],
     canzoni[3],
     canzoni[4],
-    canzoni[5]
+    canzoni[5],
   ];
   favSongs.forEach(({ title_short, album, artist }) => {
     second.innerHTML += `<div class="card col p-0" id="second-section">
-      <img src="${album.cover_small}" alt="image" class="p-0 m-0">
+      <img src="${album.cover_medium}" alt="image" class="p-0 m-0">
       <div class="card-body">
         <p class="card-title">${title_short}</p>
       </div>`;
@@ -108,7 +108,7 @@ const thirdSection = async () => {
     canzoni[13],
     canzoni[14],
     canzoni[18],
-    canzoni[19]
+    canzoni[19],
   ];
   let idArtist = [];
   for (let i = 0; i < albums.length; i++) {
@@ -170,7 +170,7 @@ let playList = [
   "Codda con sorriso",
   "No stress",
   "ASMR",
-  "Cardio"
+  "Cardio",
 ];
 
 const play = () => {
@@ -186,5 +186,3 @@ window.onload = async function () {
   await thirdSection();
   play();
 };
-
-
