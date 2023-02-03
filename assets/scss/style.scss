@@ -685,6 +685,13 @@ body {
     display: none !important;
   }
 
+  .textBox {
+    h5 {
+      position: relative;
+      top: 85px;
+    }
+  }
+
   .arrowMobile {
     display: block;
     background-color: #2e2e2e84;
