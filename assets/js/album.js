@@ -14,11 +14,11 @@ const album = async () => {
   headAlbumPage.innerHTML = `            
     <div class="col d-lg-flex align-items-end ">
     <div class="d-flex">
-      <div class="arrowBack d-lg-none "><i class="bi bi-arrow-left"></i></div>
-      <div class=" d-flex align-items-end"> <img id="imgAlbum" src="${albums.cover_medium}" alt=""></div>
+      <div class="arrowBack d-lg-none me-5"><i class="bi bi-arrow-left me-3"></i></div>
+      <div class="d-flex align-items-end"> <img id="imgAlbum" src="${albums.cover_medium}" alt=""></div>
     </div>
     <div class="mainAlbumPage">
-      <p class="d-sm-none d-md-inline">Album</p>
+      <p class="d-none d-md-inline">Album</p>
       <h2 class="text-start ">${albums.title}</h2>
       <p class="detailsAlbum d-none d-lg-inline"><img class="miniImgAlbum" src="${albums.artist.picture_small}" alt="">${albums.artist.name} •
       ${albums.release_date} • ${albums.nb_tracks}, ${albums.duration} sec</p>
@@ -43,7 +43,7 @@ let playList = [
   "Codda con sorriso",
   "No stress",
   "ASMR",
-  "Cardio",
+  "Cardio"
 ];
 
 const play = () => {

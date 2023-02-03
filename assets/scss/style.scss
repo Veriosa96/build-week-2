@@ -492,23 +492,35 @@ body {
 }
 
 .bodyAlbum {
-  padding-top: 3em;
+  //padding-top: 3em;
   color: $textGray;
-  font-size: 0.5em;
-  ul {
+  font-size: 0.6em;
+  .ulAlbum {
     display: flex;
     justify-content: space-between;
     border-bottom: 0.5px solid $lightgrey;
     @media screen and (max-width: 768px) {
       border: none;
     }
-    padding: 0 2.5em;
+    padding-bottom: 1em;
     margin: 2.5em;
     span {
       display: flex;
-      padding-right: 10em;
-      li {
-        padding-left: 30em;
+
+      .rip {
+        //padding-left: 30em;
+        padding-right: 30em;
+      }
+    }
+  }
+  .albumList {
+    padding-bottom: 1em;
+    margin: 2.5em;
+    span {
+      display: flex;
+      .rip {
+        //padding-left: 30em;
+        padding-right: 30em;
       }
     }
   }
