@@ -199,7 +199,7 @@ const thirdSection = async () => {
       let songInfo = document.getElementById("songInfo");
       songInfo.innerHTML = `
             <div class="image-container">
-              <img src="${albums[i].album.title}" />
+              <img src="${albums[i].album.cover_medium}" />
             </div>
             <div class="song-description">
               <p class="title">${albums[i].album.title}</p>
