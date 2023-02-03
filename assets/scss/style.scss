@@ -222,12 +222,18 @@ body {
               width: 8em;
               padding: 0.9em;
               color: $black;
+              &:hover {
+                cursor: pointer;
+              }
             }
             .secondButton {
               border: 1px solid $lightgrey;
               border-radius: 3em;
               width: 8em;
               padding: 0.9em;
+              &:hover {
+                cursor: pointer;
+              }
             }
             li {
               display: flex;

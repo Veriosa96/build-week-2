@@ -215,11 +215,17 @@ body footer {
   padding: 0.9em;
   color: black;
 }
+.box #mainCard #dataTrack .bodyCard .buttonCard ul .firstButton:hover {
+  cursor: pointer;
+}
 .box #mainCard #dataTrack .bodyCard .buttonCard ul .secondButton {
   border: 1px solid #3f3f3f;
   border-radius: 3em;
   width: 8em;
   padding: 0.9em;
+}
+.box #mainCard #dataTrack .bodyCard .buttonCard ul .secondButton:hover {
+  cursor: pointer;
 }
 .box #mainCard #dataTrack .bodyCard .buttonCard ul li {
   display: flex;
