@@ -5,6 +5,7 @@ const fetchSongs = async function (query) {
   return song;
 };
 
+let footerSong = {};
 const mainSong = async () => {
   let canzone = await fetchSongs("dumb");
   let div = document.getElementById("dataTrack");
@@ -14,7 +15,7 @@ const mainSong = async () => {
   <div class="mainAlbum">
     <p>${favSong.album.title}</p>
     <div class="bodyCard">
-        <a href="../../Album.html"><h1>${favSong.title}</h1></a>
+        <h1 id="albumPage1" type="button">${favSong.title}</h1>
         <p id="artistPage1" type="button">${favSong.artist.name}</p>
         <p>Ascolta il nuovo singolo di</p>
         <div class="buttonCard">
@@ -28,42 +29,51 @@ const mainSong = async () => {
   </div>
   `;
 
-  let titolo = document.getElementById("titolo");
+  footerSong = {
+    title: favSong.title,
+    artist: favSong.artist.name,
+    img: favSong.album.cover_medium
+  };
+
+  /* let titolo = document.getElementById("titolo");
   titolo.innerText = `${favSong.title}`;
 
   let songInfo = document.getElementById("songInfo");
   songInfo.innerHTML = `
-<div class="image-container">
+          <div class="image-container">
             <img src="${favSong.album.cover_medium}" />
           </div>
           <div class="song-description">
             <p class="title">${favSong.title}</p>
             <p class="artist">${favSong.artist.name}</p>
           </div>
-`;
+`; */
 
   let idArtist = favSong.artist.id;
-  let idAlbum = favSong.album.id;
   let artista = document.getElementById("artistPage1");
-
   const pageArtist = () => {
     window.location.assign(`../../artist-page.html?idArtist=${idArtist}`);
-    console.log(idArtist);
   };
 
   artista.addEventListener("click", () => {
     pageArtist();
   });
 
-  //artista.onclick = pageArtist;
-
-  return idArtist, idAlbum;
+  let idAlbum = favSong.album.id;
+  let album = document.getElementById("albumPage1");
+  const pageAlbum = () => {
+    window.location.assign(`../../Album.html?idAlbum=${idAlbum}`);
+  };
+  album.addEventListener("click", () => {
+    pageAlbum();
+  });
+  console.log(footerSong);
+  return footerSong;
 };
 
 /* FIRST SECTION */
 const nascondi = () => {
   let element = document.querySelectorAll(".box");
-  console.log(element);
   element[0].classList.toggle("d-none");
 };
 
@@ -85,18 +95,28 @@ const secondSection = async () => {
     canzoni[4],
     canzoni[5]
   ];
-  favSongs.forEach(({ title_short, album, artist }) => {
+  let idAlbum = [];
+  favSongs.forEach(({ title_short, album }) => {
     second.innerHTML += `
     <div class="card col p-0 text-truncate" id="second-section">
       <div class="d-flex align-items-center justify-content-between">
         <img src="${album.cover_small}" alt="image" class="p-0 m-0">
         <div class="card-body p-0">
-          <p class="card-title ps-2">${title_short}</p>
+          <p class="pageAlbum2 card-title ps-2">${title_short}</p>
         </div>
       </div>
     </div>
       `;
+    idAlbum.push(album.id);
   });
+  let album = document.querySelectorAll(".pageAlbum2");
+
+  for (let i = 0; i < album.length; i++) {
+    let pageAlbum2 = () => {
+      window.location.assign(`../../Album.html?idAlbum=${idAlbum[i]}`);
+    };
+    album[i].addEventListener("click", pageAlbum2);
+  }
 };
 
 /* THIRD SECTION */
@@ -116,6 +136,7 @@ const thirdSection = async () => {
     canzoni[19]
   ];
   let idArtist = [];
+  let idAlbum = [];
   for (let i = 0; i < albums.length; i++) {
     third.innerHTML += `
     <div class="col p-0">
@@ -126,7 +147,7 @@ const thirdSection = async () => {
           alt=""
         />
       <div class="cardBody p-3 text-truncate">
-        <h5 class="text-truncate">${albums[i].album.title}</h5>
+        <h5 class="albumPage3 text-truncate">${albums[i].album.title}</h5>
         <p class="artistPage2 text-truncate" type="button">${albums[i].artist.name}</p>
       </div>
     </div>
@@ -151,15 +172,23 @@ const thirdSection = async () => {
 
     `;
     idArtist.push(albums[i].artist.id);
+    idAlbum.push(albums[i].album.id);
   }
-  console.log(idArtist);
+
   let artista = document.querySelectorAll(".artistPage2");
-  console.log(artista);
   for (let i = 0; i < artista.length; i++) {
     let pageArtist2 = () => {
       window.location.assign(`../../artist-page.html?idArtist=${idArtist[i]}`);
     };
     artista[i].addEventListener("click", pageArtist2);
+  }
+
+  let album = document.querySelectorAll(".albumPage3");
+  for (let i = 0; i < album.length; i++) {
+    let pageAlbum3 = () => {
+      window.location.assign(`../../Album.html?idAlbum=${idAlbum[i]}`);
+    };
+    album[i].addEventListener("click", pageAlbum3);
   }
 };
 

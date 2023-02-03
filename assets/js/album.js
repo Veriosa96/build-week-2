@@ -1,5 +1,10 @@
+// devo inserire url
+let url = new URLSearchParams(location.search);
+
+// mi prendo dall'url il vaore result
+let id = url.get("idAlbum");
+
 let api = "https://striveschool-api.herokuapp.com/api/deezer/album/";
-let id = "12047934";
 
 const fetchAlbum = async () => {
   let res = await fetch(api + id);
@@ -19,22 +24,31 @@ const album = async () => {
     <div class="mainAlbumPage">
       <p class="d-none d-md-inline">Album</p>
       <h2 class="text-start ">${albums.title}</h2>
-      <p class="detailsAlbum d-none d-lg-inline"><img class="miniImgAlbum" src="${albums.artist.picture_small}" alt="">${albums.artist.name} •
-      ${albums.release_date} • ${albums.nb_tracks}, ${albums.duration} sec</p>
+      <p class="detailsAlbum d-none d-md-block"><img class="miniImgAlbum" src="${albums.artist.picture}" alt=""><span type="button" id="artist-page">${albums.artist.name}</span> •
+      ${albums.release_date} • ${albums.nb_tracks} brani, ${albums.duration} sec</p>
       <div class="d-inline d-md-inline d-lg-none">
-      <p>${albums.artist.name}</p>
-      <p>Album • ${albums.release_date}</p>
+      <p class="pb-2"><img class="miniImgAlbum" src="${albums.artist.picture}" alt=""> ${albums.artist.name}</p>
+      <p class="text-secondary">Album • ${albums.release_date}</p>
       </div>
     </div>
   </div>
   `;
+
+  let idArtist = albums.artist.id;
+  let artista = document.getElementById("artist-page");
+  const pageArtist = () => {
+    window.location.assign(`../../artist-page.html?idArtist=${idArtist}`);
+  };
+
+  artista.addEventListener("click", () => {
+    pageArtist();
+  });
 };
 
 const tracks = async () => {
   let traccia = await fetchAlbum();
   let tracks = traccia.tracks;
   let trackPage = tracks.data;
-  console.log(trackPage);
   let trackList = document.getElementById("trackList");
   for (let i = 0; i < 11; i++) {
     let numb = i + 1;
@@ -45,20 +59,20 @@ const tracks = async () => {
     pippo.splice(1, 0, ":");
     let finalDurata = pippo.join("");
     trackList.innerHTML += `
-    <div class="d-flex justify-content-between mb-2">
+    <div class="d-flex justify-content-between mb-3 align-items-center">
       <div class="d-flex justify-content-between align-items-center">
-        <li class="pe-3">${numb}</li>
-        <div class="d-flex flex-column justify-content-center">
+        <li class="pe-3 d-none d-md-block">${numb}</li>
+        <div class="songAlbumJS d-flex flex-column justify-content-center">
           <li class="text-white fw-bold">${trackPage[i].title_short}</li>
           <li>${trackPage[i].artist.name}</li>
         </div>
       </div>
-      <span class="d-flex justify-content-between">
+      <span class="d-none d-md-flex justify-content-between">
         <li class="rip">${trackPage[i].rank}</li>
         <li>${finalDurata}</li>
       </span>
+      <i class="bi bi-three-dots-vertical fs-4 d-md-none"></i>
     </div>
-
 `;
   }
 };

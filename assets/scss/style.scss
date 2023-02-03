@@ -123,11 +123,13 @@ body {
 // INIZIO SEZIONE CENTRALE
 
 #center {
+  padding-bottom: 100px !important;
   overflow-y: auto;
   padding: 0.5em 1em;
-  height: 100rem !important;
+  //height: 100vh !important;
   @media screen and (max-width: 765px) {
     background-color: $player !important;
+    padding-bottom: 0 !important;
   }
   .topBar2 {
     .arrow {
@@ -459,9 +461,9 @@ body {
 }
 .playerAlbum {
   padding-top: 1em;
-  border-top: 0.3px solid;
+  //border-top: 0.3px solid;
   display: flex;
-  padding-left: 1.8em;
+  // padding-left: 1.8em;
   cursor: pointer;
   i {
     display: flex;
@@ -481,6 +483,10 @@ body {
       justify-content: end;
     }
   }
+}
+
+.songAlbumJS {
+  font-size: 1.4em;
 }
 
 .bodyAlbum {
