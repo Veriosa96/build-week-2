@@ -35,10 +35,6 @@ let artist = async () => {
         </div>
       </div>
         `;
-  /*   let like = document.getElementById("rightTextImage");
-  like.innerHTML = `
-  <p class="whiteText">Hai messo Mi piace a 11 brani</p>
-  <p>di ${artista.name}</p>`; */
 };
 
 let tracks = async () => {
@@ -65,7 +61,7 @@ let tracks = async () => {
             <img id="smallCover" src="${tracks[i].album.cover_small}" alt=""
                 class="me-3" />
             <div>
-              <p class="noneMobile albumName">${tracks[i].title_short}</p>
+              <p class="noneMobile albumName playSong1">${tracks[i].title_short}</p>
               <p class="noneDesktop">276.968.994</p>
             </div>
           </div>
@@ -78,6 +74,26 @@ let tracks = async () => {
           </div>
         </div>
         `;
+      }
+      let playSong = document.querySelectorAll(".playSong1");
+      for (let i = 0; i < tracks.length; i++) {
+        const footerPlayer1 = () => {
+          let titolo = document.getElementById("titolo");
+          titolo.innerText = `${tracks[i].title_short}`;
+          let songInfo = document.getElementById("songInfo");
+          songInfo.innerHTML = `
+          <div class="image-container">
+            <img src="${tracks[i].album.cover_medium}" />
+          </div>
+          <div class="song-description">
+            <p class="title">${tracks[i].title_short}</p>
+            <p class="artist">${tracks[i].artist.name}</p>
+          </div>
+`;
+        };
+        playSong[i].addEventListener("click", () => {
+          footerPlayer1();
+        });
       }
     }
   } catch (error) {
